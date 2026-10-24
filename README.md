@@ -1,12 +1,40 @@
-# PSX Atlas
+<p align="center">
+  <a href="https://raiinman.github.io/PSX-Atlas/">
+    <img src="docs/promo/psx-atlas-hero.png" width="100%" alt="PSX Atlas — the PlayStation hardware reference. Crimson armor, pearl trim and decorative motherboard artwork. Click to launch the Atlas.">
+  </a>
+</p>
 
-**[Launch the working PSX Atlas](https://raiinman.github.io/PSX-Atlas/)** · [Download the offline edition](https://github.com/raiinman/PSX-Atlas/releases/latest) · [Read the GitHub files](https://github.com/raiinman/PSX-Atlas/tree/main)
+<h1 align="center">PSX Atlas</h1>
+<p align="center"><strong>Read the reference. Explore its connections. Keep the whole thing offline.</strong></p>
+<p align="center">
+  <a href="https://raiinman.github.io/PSX-Atlas/"><strong>▶ LAUNCH PSX ATLAS</strong></a> &nbsp; · &nbsp;
+  <a href="https://github.com/raiinman/PSX-Atlas/releases/latest"><strong>↓ DOWNLOAD OFFLINE</strong></a> &nbsp; · &nbsp;
+  <a href="https://github.com/raiinman/PSX-Atlas/tree/main"><strong>⌘ VIEW SOURCE ON GITHUB</strong></a>
+</p>
+<p align="center"><a href="https://raiinman.github.io/PSX-Atlas/agents.html">Agent access</a> · <a href="https://raiinman.github.io/PSX-Atlas/agent/START.md">Agent starting point</a> · <a href="https://github.com/raiinman/PSX-Atlas/actions/workflows/update.yml">Daily update checks</a> · <a href="https://github.com/raiinman/PSX-Atlas/issues/1">Evidence awaiting review</a></p>
 
-The live site uses the same verified archive and updates with each successful daily release. Choose **Exit Atlas → GitHub** in its navigation to leave the site interface and read the repository. GitHub Pages uses the Atlas interface directly, without a Jekyll template.
+The complete PSX-SPX development reference, presented as a source-linked hardware Atlas for people and AI agents. Full-text search, original articles and diagrams, exact-section retrieval, backlinks and open data formats share one archive. The red armor and pearl interface preserves the original green system map.
 
-Open [offline/index.html](offline/index.html) in a modern browser. **No server, installation, internet, or account is needed.** Keep the whole `offline` folder together. The ZIP is a portable copy of that folder.
+This is the repository's **README landing page**. The interactive app runs on **GitHub Pages**; click the banner or Launch button to use it. In the app, **Exit Atlas → GitHub** returns to the ordinary repository. GitHub's file browser stays available above this README.
 
-This local reference preserves the entire published PSX-SPX development website at `https://psx-spx.consoledev.net/dev/`, captured October 24, 2026. Human and Agent views share one source corpus. The red armor and pearl interface retains the original system diagram, adds full-text section search, subsystem filters, a source-linked hardware atlas, four guided reading paths, page backlinks, diagram enlargement, interactive numeric bit-field extraction, and print styling. Search and all reading features work directly with `file://` URLs. No telemetry, remote font, CDN, cloud API, or service worker is used. Added credits and source notices are consolidated in the sidebar snapshot block; original source credits stay in the articles.
+[![Actual PSX Atlas interface showing its original green hardware map, source-linked connections, topic library and red/pearl styling](docs/promo/atlas-interface.png)](https://raiinman.github.io/PSX-Atlas/)
+
+*Actual working Atlas interface. The armor artwork in the promotional banners is decorative; the source-linked map above is the real navigation model.*
+
+| For people | For AI agents | For offline use |
+| --- | --- | --- |
+| Search the complete reference, follow citations, enlarge diagrams and inspect register bit fields. | Start at agent/START.md; use topic cards, typed links, exact JSONL records, original Markdown or SQLite FTS5. | Download and extract the ZIP, then open index.html. Reading and browser search need no server, account or internet. |
+
+[![One archive, two ways in: humans and AI agents. Source-linked, full-text search, 100 percent offline. Decorative book and machine index artwork.](docs/promo/psx-atlas-dual-reference.png)](https://raiinman.github.io/PSX-Atlas/agents.html)
+
+Daily maintenance follows upstream **master**, builds and checks a pinned snapshot, then publishes a verified release and updates the live Atlas. Source branches, links, uncertainty and alternatives remain available. Changed evidence is flagged for review; it is not automatically approved. Previous releases and local backups remain available on failure.
+
+**Current review:** the SPU update added LSAX write-latch and voice-start timing details. [See exactly what changed and why the SPU ↔ Sound RAM connection was flagged](evidence/SPU-UPDATE-848ed5db.md). The flag remains unapproved.
+
+Source text and attribution: Martin “nocash” Korth and PSX-SPX contributors. Original credits and source rights statements remain in the archive. No new license is asserted over upstream material.
+
+<details>
+<summary><strong>Archive contents, agent commands, update schedules and technical documentation</strong></summary>
 
 ## Contents
 
@@ -101,3 +129,6 @@ DSL-Helper's frontend engineering, performance optimization and frontend design 
 The dual-view benchmarks reduced the initial reference-data payload from 15.6 MB to 43 KB. Across three fresh offline Chrome contexts on this host, median cold first-search time changed from 1,782 ms to 448 ms. Five agent query samples took 87–98 ms including Node startup. These are local synthetic measurements; see `evidence/performance-after.json` for the samples and conditions. `npm run benchmark` enforces a 1.5-second median cold-search budget and a one-second agent-process budget on the test host. All reading pages and machine text are validated against the captured source, and every retrieval byte range is checked.
 
 After building and verifying, `npm run package` refreshes the portable ZIP and its SHA-256 inventory using Node.js.
+
+
+</details>

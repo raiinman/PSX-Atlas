@@ -18,3 +18,5 @@ No child documents.
 
 ## Operational files
 update-policy.json owns schedule/repository settings; source-snapshot.json is the initial baseline, with subsequent baselines recovered from the latest release. accepted-evidence.json records explicit human acceptance. local-install.json is machine-local and ignored.
+
+Snapshot schema 2 hashes committed Git blob bytes (SHA-256), independent of Windows checkout line endings. Legacy worktree-hash release snapshots are replaced with the canonical initial baseline for comparison; human acceptance is never inferred from those legacy hashes.

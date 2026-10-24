@@ -12,7 +12,7 @@ try{
  const config=fs.readFileSync(stage+'/upstream/mkdocs.yml','utf8').replace(/^  - with-pdf:\r?\n(?:^    .*\r?\n)*/gm,'');fs.writeFileSync(stage+'/upstream/.atlas-mkdocs.yml',config);
  run(python,['-m','mkdocs','build','--config-file','upstream/.atlas-mkdocs.yml','--site-dir',stage+'/rendered'],stage,{ENABLE_PDF_EXPORT:'0'});
  run(process.execPath,['scripts/import-site.mjs',stage+'/rendered'],stage,{ATLAS_SOURCE_COMMIT:sha});run(process.execPath,['scripts/build.mjs'],stage);
- const baselinePath=process.env.ATLAS_BASELINE||path.join(root,'state/source-snapshot.json'),previous=JSON.parse(fs.readFileSync(baselinePath)),accepted=JSON.parse(fs.readFileSync('state/accepted-evidence.json')).edges;
+ const baselinePath=process.env.ATLAS_BASELINE||path.join(root,'state/source-snapshot.json'),loadedPrevious=JSON.parse(fs.readFileSync(baselinePath)),initialBaseline=JSON.parse(fs.readFileSync('state/source-snapshot.json')),previous=loadedPrevious.hash_scheme==='git-blob-sha256'?loadedPrevious:initialBaseline,accepted=JSON.parse(fs.readFileSync('state/accepted-evidence.json')).edges;
  const {snapshot,report}=writeReview(stage,previous,accepted);
  // Evidence status is carried into the generated graph and agent model without changing source connections.
  const reviewState={...report,manual_evidence:report.manual_evidence};fs.writeFileSync(stage+'/review-state.json',JSON.stringify(reviewState));

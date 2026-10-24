@@ -1,0 +1,17 @@
+import fs from 'node:fs';import path from 'node:path';import os from 'node:os';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';
+import {load} from 'cheerio';
+const root=path.resolve('offline'),read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8')),manifest=read('agent/manifest.json'),map=read('agent/map.json');
+assert.equal(map.length,manifest.page_count);assert.ok(fs.statSync(root+'/agent/map.json').size<Math.max(50000,manifest.page_count*350));assert.ok(fs.statSync(root+'/agent/START.md').size<4000);assert.ok(fs.statSync(root+'/assets/data.js').size<Math.max(60000,manifest.page_count*500));
+const all=fs.readFileSync(root+'/data/sections.jsonl','utf8').trim().split('\n').map(JSON.parse),byId=new Map(all.map(s=>[s.id,s]));let count=0;
+for(const p of map){const card=read(p.card),records=fs.readFileSync(path.join(root,card.records));for(const location of card.sections){const record=JSON.parse(records.subarray(location.offset,location.offset+location.bytes).toString('utf8'));assert.deepEqual(record,byId.get(location.id),'Exact record range '+location.id);count++;}for(const link of card.outgoing)assert.ok(map.some(p=>p.id===link.page_id));assert.ok(fs.existsSync(path.join(root,card.markdown)));}
+assert.equal(count,all.length);assert.equal(count,manifest.records);
+const capture=JSON.parse(fs.readFileSync('archive/inventory.json','utf8'));
+for(const p of capture.pages){const $=load(fs.readFileSync('archive/'+p.file,'utf8')),article=$('article.md-content__inner');article.find('[data-cfemail]').each((i,el)=>{const e=$(el),hex=e.attr('data-cfemail'),key=parseInt(hex.slice(0,2),16);e.text(Buffer.from([...Buffer.from(hex.slice(2),'hex')].map(b=>b^key)).toString('utf8'));});article.children('h1,h2,h3,h4,h5,h6').remove();article.find('svg,.headerlink,.tabbed-labels,script,.md-content__button').remove();const pageId=p.route?p.route.replace(/\/$/,'').replaceAll('/','--'):'home';const text=all.filter(s=>s.page_id===pageId&&s.kind!=='diagram_text').map(s=>s.text).join('');assert.ok(text.replace(/\s/g,'')===article.text().replace(/\s/g,''),'Complete retrieval text without duplication: '+p.route);}
+const cli=(...args)=>JSON.parse(execFileSync(process.execPath,[root+'/agent/lookup.mjs',...args],{encoding:'utf8',cwd:os.tmpdir()}));
+const dma=cli('where does DMA3 go').entities.find(e=>e.id==='dma3');assert.equal(dma.description,'CD-ROM → RAM');assert.equal(dma.connections[0].from,'cdrom');assert.equal(dma.connections[0].to,'ram');
+for(const query of ['1F801810h','0x1f801810','BF801810h']){const result=cli(query);assert.equal(result.symbol.address,'0x1f801810');assert.ok(result.symbol.references[0].local_url.includes('gpu'));
+ const s=cli('--section',result.symbol.references[0].section_id).section;assert.deepEqual(s,byId.get(s.id));}
+assert.ok(cli('GPU bus bridge').hits.some(h=>h.heading.startsWith('Diagram')),'Diagram labels retrievable');
+const memory=all.filter(s=>s.heading.startsWith('1F80101Ch'));assert.ok(memory.length<10,'No duplicated nested-container retrieval text');
+assert.ok(cli('texture cache').hits.length);assert.equal(cli('--page','ps1--system--dmachannels').page.id,'ps1--system--dmachannels');
+const report={agent_routes:map.length,records_checked:count,complete_source_text:true,exact_byte_ranges:true,address_formats_and_mirrors:true,dma_direction:true,diagram_labels:true,arbitrary_working_directory:true};fs.writeFileSync('evidence/agent-verification.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));

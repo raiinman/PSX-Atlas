@@ -1,0 +1,12 @@
+{
+  "repository": "raiinman/PSX-Atlas",
+  "upstream": "https://github.com/psx-spx/psx-spx.github.io.git",
+  "branch": "master",
+  "source_url": "https://psx-spx.consoledev.net/dev/",
+  "daily_utc": "14:23",
+  "daily_client_time": "07:23 UTC-07:00",
+  "local_install_daily_utc": "15:07",
+  "publish_only_after_verification": true,
+  "retain_previous_releases": true,
+  "semantic_rewrites": false
+}

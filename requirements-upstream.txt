@@ -1,0 +1,3 @@
+# Renderer versions are controlled by the Atlas, not installed from changing upstream requirements.
+mkdocs==1.5.3
+mkdocs-material==9.5.17

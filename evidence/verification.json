@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-24T15:32:44.396Z",
+  "static": {
+    "html_pages": 145,
+    "reference_pages": 143,
+    "exact_preformatted_blocks": 2691,
+    "preserved_svg": 163,
+    "all_source_files_byte_identical": true,
+    "capture_hashes_verified": 147,
+    "all_local_files_resolve": true,
+    "external_runtime_resources": 0
+  },
+  "browser": {
+    "search": "term, exact phrase, category filter, empty state, keyboard shortcut and modal focus passed",
+    "register_inspector": "32-bit extraction, bit toggle, single-space field ranges and invalid-input handling passed",
+    "gpu_tabs": "both GPU variants reachable by pointer and keyboard",
+    "responsive": {
+      "320": "passed",
+      "768": "passed",
+      "1024": "passed",
+      "1440": "passed"
+    },
+    "accessibility": [
+      {
+        "file": "index.html",
+        "violations": []
+      },
+      {
+        "file": "agents.html",
+        "violations": []
+      },
+      {
+        "file": "pages/ps1/system/dmachannels/index.html",
+        "violations": []
+      },
+      {
+        "file": "pages/ps1/gpu/index.html",
+        "violations": []
+      }
+    ],
+    "external_requests": [],
+    "offline_file_protocol": true
+  },
+  "source_anchor_issues": [],
+  "errors": []
+}

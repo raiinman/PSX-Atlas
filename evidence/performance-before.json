@@ -1,0 +1,17 @@
+[
+  {
+    "load_ms": 329,
+    "first_search_ms": 1782,
+    "initial_js_bytes": 15610369
+  },
+  {
+    "load_ms": 352,
+    "first_search_ms": 1566,
+    "initial_js_bytes": 15610369
+  },
+  {
+    "load_ms": 317,
+    "first_search_ms": 1957,
+    "initial_js_bytes": 15610369
+  }
+]

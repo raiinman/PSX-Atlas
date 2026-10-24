@@ -1,0 +1,1306 @@
+{
+  "schema_version": 1,
+  "adapter": "github",
+  "repository": "raiinman/skill-library",
+  "branch": "main",
+  "revision": "594499cb9a842822580d847d85abdf832814c27c",
+  "maintenance_overlay": {
+    "id": "dsi-0.1.13",
+    "repository": "raiinman/skill-library",
+    "base_revision": "697672c69dcb87834cf5c75cdcd0cbd85082c6cf",
+    "manifest_sha256": "8d3acff7e06149e2f10258e16a419f2426f3623136f7598924f9568c9d7a899a"
+  },
+  "discovery_mode": "derived-from-pinned-catalog",
+  "discovery_inputs": {
+    "CATALOG.md": "c67e9efd0601fc9c5487b24b326f0173c483ed0304dde219c2d62e8c1e3e0531",
+    "skills/3d-and-web/aify-blender/SKILL.md": "98af3e00f39ece27860ec44f31111fb6b15ff86a58461885001c46953167a836",
+    "skills/3d-and-web/antigravity-design-expert/SKILL.md": "e4984c7da506b86bd29d3e85c300ecd306e1ff75d7c2d85d9530ff6a0246e34a",
+    "skills/3d-and-web/blender-addon-engineer/SKILL.md": "0770d9c3a375ee678108448f0cdc1ea8f932dc71c9ff412ff513bfafba7ed5ef",
+    "skills/3d-and-web/blender-mcp/SKILL.md": "3863893891bab96a509d40affd8daca5e5a3302c0582b6f35a6c56146f55c522",
+    "skills/3d-and-web/blender-studio/SKILL.md": "d6a1276e17b520edcc3c13d93b53b30c9fb83c94d792ceb4854922d2eeb8994c",
+    "skills/3d-and-web/blender-web-pipeline/SKILL.md": "97ea8987e910199983d5c1f3872d85ede9b706cd4ec98539a3394a2c652d3a28",
+    "skills/3d-and-web/blender/SKILL.md": "c9b5de57304fd6cc3eff8767b6278f9f838358ca900dde8f22d34385bcf2a0b7",
+    "skills/3d-and-web/cc-blender-toolkit/SKILL.md": "5b8bcfbf919f0ae6c052c840c9522b6d65f238393c6972e890e1cc39ad5d805a",
+    "skills/3d-and-web/dream-loop/SKILL.md": "b35e9cc66bcd0167b1b8bc0c518798db16d1d6b0094f5dfc8ee8d4cedf0b6cba",
+    "skills/3d-and-web/frontend-design/SKILL.md": "acefb1d22fbe6f82b2ead5eb953ea48c5b9d4fa23cf645a13eb3f9fadefb4845",
+    "skills/3d-and-web/frontend-motion-wizard/SKILL.md": "b5fd8c2df3606eac022cdcba0dc1fde6b11cae9f6e9575795b9a994eb2fe14c6",
+    "skills/3d-and-web/high-end-visual-design/SKILL.md": "23f502902f4b5f58c8dde30c1969f68f0cac02a0a2d26e6a7a0c7eefb7bd1c60",
+    "skills/3d-and-web/image-to-code/SKILL.md": "273f6815cecf0df873e3f2327ee11fae36197825fda73c23cb1d13df1c364e8b",
+    "skills/3d-and-web/img2blender/SKILL.md": "56aa420a56a0086ee98d14ede0a83a500985f99c0453230018835dece52c4124",
+    "skills/3d-and-web/img2threejs/SKILL.md": "e0c29eca4bba7759a2f8703dc4acd8aaabcc3f60aedf938b283b6ffd51531bcc",
+    "skills/3d-and-web/llm-blender-agent/SKILL.md": "96fbbc5e4483a7ec76f7e7635c66188ff241546cc95e083e478a1c5e8259098e",
+    "skills/3d-and-web/next-best-practices/SKILL.md": "a9177682ab7eec4b86f97455a1bb44b81706668eef1aa6ba6a55ac32355226e7",
+    "skills/3d-and-web/threejs-postprocessing/SKILL.md": "2d608f4cc1e094fe26af0627331cb44dbe0753ba8cd2aa34214306a9370d7fdd",
+    "skills/3d-and-web/ui-animation/SKILL.md": "f64553753a8ada4892f18168b1675b095230a86aac04e024b1e52800f3113cb2",
+    "skills/3d-and-web/voxify/SKILL.md": "efc256848d6fcd96658f888a56f3d7c6dfd0b4e8798fc23f5def09eb7ec16943",
+    "skills/business-planning/business-plan-engine/SKILL.md": "2aca281817d06214929697eec4ef394342e48ae9793c35595d15f2dc19d98632",
+    "skills/cloud-and-aws/amazon-bedrock/SKILL.md": "79cf67d48a46e4b702a6cd906f011305f0460c2027aa5961b0b302fcad292323",
+    "skills/cloud-and-aws/aws-ai-ml/SKILL.md": "f7afd0f371e858d9f1f5fdc433a4b2336700a027dc279d88da8faef79d3ba09b",
+    "skills/cloud-and-aws/aws-auth/SKILL.md": "8cbb84e70c459a9faa6260e287641de7e0b4e67fec2c218165a554e1cf812f24",
+    "skills/cloud-and-aws/aws-billing-and-cost-management/SKILL.md": "f4bd633eb71f49f5bbb3327fa2d03d282801f39f6d2b076a6ac7bc7fc0cc13af",
+    "skills/cloud-and-aws/aws-blocks/SKILL.md": "6eaa05fa5771974739cb826b754d3da8e761a875b7ceefd8d240cbdc2442d855",
+    "skills/cloud-and-aws/aws-cdk/SKILL.md": "7c7ab640cefa147c9d0264140f5ba2a76ab6b819ee9a7259456c74abfc325288",
+    "skills/cloud-and-aws/aws-cloudformation/SKILL.md": "d145194e8bf13c2dd34b3c35cf2450c8c58cade90c3cb75b913eb79809ccb521",
+    "skills/cloud-and-aws/aws-compute/SKILL.md": "b6b8bff0051cb50a8bd0806053616d02dd11a2f574a12d40ccaccfe23280f7ab",
+    "skills/cloud-and-aws/aws-containers/SKILL.md": "4cc9d3b85409baa691794b858f46628930272314d9bb2deea086f3b62a0ec351",
+    "skills/cloud-and-aws/aws-database/SKILL.md": "338771c1ba75b89dcb12c8565f01464730cfe22edf64eaf3d173534b4954a518",
+    "skills/cloud-and-aws/aws-deployment/SKILL.md": "6aca837190ede7087140efa862818cba8529afe1d537dbe4106cccfd78357826",
+    "skills/cloud-and-aws/aws-iam/SKILL.md": "20639fd9af8b4dbf02acb00ce0fc575b3e5eb634a836a953228589ca2091b7a6",
+    "skills/cloud-and-aws/aws-messaging-and-streaming/SKILL.md": "e941605d9ad4e6d54fa864693124f933aa6cc36eec27e07ba7febdf195bc99cf",
+    "skills/cloud-and-aws/aws-networking/SKILL.md": "9626571d36656a892d2802d57e88c08cbde3122e0ea1c4c596bf67c79535f391",
+    "skills/cloud-and-aws/aws-observability/SKILL.md": "32f4747c2128250c63fe392d8721a6823c5166117f08bb8cefb3dece90b4db9e",
+    "skills/cloud-and-aws/aws-sdk-js-v3-usage/SKILL.md": "f95f48a985014242c77ed0d1a50af269ff927ec4fde2d0e4e704d9cc6c7c6f8f",
+    "skills/cloud-and-aws/aws-sdk-python-usage/SKILL.md": "da02eb7b67282609b94289f63f1c58106e4fc71f123993e207a3afd06d228878",
+    "skills/cloud-and-aws/aws-sdk-swift-usage/SKILL.md": "29b875228f5e6f54ea70cf2a964cdc89f259e77c4ba2a86b213bb3e0be26dccf",
+    "skills/cloud-and-aws/aws-security/SKILL.md": "231f87fc17842ee55ad6a24c3b80835e0b08676df2e141b574786ad6f033b4d2",
+    "skills/cloud-and-aws/aws-serverless/SKILL.md": "5950d9ec3f244241165fd18c20631d78eabbd8c4495b44d79793cc6d378f3e46",
+    "skills/cloud-and-aws/aws-storage/SKILL.md": "554a2743463024747697a89d06de6d5ad6659ea966c668ceecc1a954035a915a",
+    "skills/cloud-and-aws/launch-with-aws/SKILL.md": "e389c9ecbfb026f63da13319e8a4d19e99bdac4fbdea3f98d6c5272c5dc656a6",
+    "skills/cloud-and-aws/signing-in-to-aws/SKILL.md": "42b3d91b5a81f70fe77d421a38d76a709bda6d2f4e37ac171bcf97cf15c6e982",
+    "skills/coding-workflow/api-and-interface-design/SKILL.md": "c254703dc649133b70c674ab539e0fd0c22ee2900bb75278e578bb65a420627b",
+    "skills/coding-workflow/browser-testing-with-devtools/SKILL.md": "eaaee69e178ac285f6e1f097b87a1825987039e3ced26eb906b9cbbd827d32a4",
+    "skills/coding-workflow/build/SKILL.md": "fea355259e9db88fc7c12928da0b7970de0d140aaf48a9b2d825209426b87e3f",
+    "skills/coding-workflow/ci-cd-and-automation/SKILL.md": "f2a72bae3deeeb857e6668fa117f5395aba8d94e155756241a2a83ce731ad482",
+    "skills/coding-workflow/code-review-and-quality/SKILL.md": "2f3539c5d621ad5f80f8a4ecd92564e9620f4def4bf0bf84dfeefec3e3b232ff",
+    "skills/coding-workflow/code-simplification/SKILL.md": "bac7de6de3373f004a6b39cbf8c6d0634592df858c479121498bf475f96577ea",
+    "skills/coding-workflow/constraint-driven-development/SKILL.md": "d9c1a81d48c288190089d18889b676489eeeb2512fce6d9d562268df6e5a94ac",
+    "skills/coding-workflow/context-engineering/SKILL.md": "2f7d2e364c2789f234ec45b65a8bbfb5083acfcf2384b19a834307296e16e4a9",
+    "skills/coding-workflow/context7-mcp/SKILL.md": "d3b469878fc43e2f405815cf731a0a9812a1461a883b139163259562ed8bca57",
+    "skills/coding-workflow/debugging-and-error-recovery/SKILL.md": "d9c10617aa7b076e7b73bc5125aacc785a6e503c70f96abf861032698c934d38",
+    "skills/coding-workflow/deprecation-and-migration/SKILL.md": "71dbfdc171289a858d7bd699762f884fb01c9f6fda726d1087d352f050557779",
+    "skills/coding-workflow/documentation-and-adrs/SKILL.md": "09540ac2663b1a65dda593858212a6dec29197f758ffe0db291054e76317612e",
+    "skills/coding-workflow/doubt-driven-development/SKILL.md": "4f08ad293024f16d8feb8a645e9030fbc7a1c83081f0aa28519afb8ef841f923",
+    "skills/coding-workflow/frontend-ui-engineering/SKILL.md": "710cd8292f1da378c494703fed6bcd822beca4ace9ac817a72546ebaced5746b",
+    "skills/coding-workflow/git-workflow-and-versioning/SKILL.md": "f678c3bb1bff1a777b48675092d5c45f32aa2aca40d0da06158e94307b6aea69",
+    "skills/coding-workflow/idea-refine/SKILL.md": "79adc244c30e82bbfc029fa696c6c9a4d34e5408fb60656bcdf7a631a9afb61c",
+    "skills/coding-workflow/incremental-implementation/SKILL.md": "e673625c44473c3c9d88a161e4e16892b142243f4a83fad4ed517b740aeaeb67",
+    "skills/coding-workflow/interview-me/SKILL.md": "a7cc7e398f44a0b769face39cbc53639c34a434ed71139f8d618b747f2f8d651",
+    "skills/coding-workflow/observability-and-instrumentation/SKILL.md": "6d1e5e9738176da660693add9555ac9f863ebad42e7afa9488608f5ac1637e39",
+    "skills/coding-workflow/performance-optimization/SKILL.md": "330dbf8db72385d6a157b47afda540eea9c4b6b1b96808beac816e720aaa6be9",
+    "skills/coding-workflow/planning-and-task-breakdown/SKILL.md": "ddb311cd84f805716cef771b7412be05bf1cf7cce5ff8a91cfceb645470afca2",
+    "skills/coding-workflow/ponytail/SKILL.md": "30a65e8eadadfd837d601fd77dfbaef9135572a7640e12f133ade98a8d3f02d9",
+    "skills/coding-workflow/ponytail-full/SKILL.md": "cd166dc615b6b1a5845b2fc2b323860d4b5b01ad6f3f03beba03314c0443b986",
+    "skills/coding-workflow/ponytail-lite/SKILL.md": "2b12c03352227f8438185a409dba465a18355f695d2cc0e0de3ba232c5846d16",
+    "skills/coding-workflow/ponytail-no-questions-asked/SKILL.md": "dca39c35f7fdd1e53c0773d3f55178ee8e665a6757e35a2cb691d4f10aa992eb",
+    "skills/coding-workflow/ponytail-ultra/SKILL.md": "4862df72457ecb8addc663cd39dd46f117645b639e9fe62a11514f8bd5d7eac3",
+    "skills/coding-workflow/security-and-hardening/SKILL.md": "1ad8c6fa27ebede38414905fa9b70e24016153c33a61a62ddbdf033760cd1ed8",
+    "skills/coding-workflow/shipping-and-launch/SKILL.md": "535984990083d0147ef7367b2f8a018b4a0335c7e5659d579871661917c99917",
+    "skills/coding-workflow/source-driven-development/SKILL.md": "6cd463cbb0203445277d3179abe2c6b66c80a117f7ad532650bbe1de21a934c7",
+    "skills/coding-workflow/spec-driven-development/SKILL.md": "1ebb99da214be29e207a50f6087db9e881cb82bb4979b64c7f163b706fe2c0ff",
+    "skills/coding-workflow/test-driven-development/SKILL.md": "a8f4d56ab1769705046cabf5a951eac6ab79f50745b956ceddef5f89c31e179f",
+    "skills/coding-workflow/using-agent-skills/SKILL.md": "a48e28afbc88c4b9362215494325db2fe9a2866f66b72b1c1c4ea06d4e3589ed",
+    "skills/coding-workflow/writing-for-agents/SKILL.md": "a4033b4c8a7256bc5e6a020a272ea3163b1cb673fd99c7d2217a2e052bb21a69",
+    "skills/design-and-art/impeccable/SKILL.md": "461377189c9eff36964a040cd6b6952f780c68b1ee539b21c26f2e47afaffca6",
+    "skills/design-and-art/krita-iterate/SKILL.md": "91546b1f2bc2c5a4af6faa885e94c3895959ea5f388be32eb4e77f6c5b5db5fa",
+    "skills/design-and-art/krita-layer-rebuild/SKILL.md": "b9574820ea76e2de3d8f4fe43ce4b97812b425f5dc54bad7e733b1934faea000",
+    "skills/design-and-art/mobile-app-ui-design/SKILL.md": "d36948a51ac1bc286736bacd3f7e5ac3716cc7abc9a337457b3977caaf8d20f3",
+    "skills/engineering/civil-engineer/SKILL.md": "a808cf881f8bcddba6591b36fb0ed17ef93c1a688deae753804656c9c594da8f",
+    "skills/finance/okx-cex-portfolio/SKILL.md": "bc362f3f67eb4a6d0726b306f214dffddc045722b978f01524a533a64327052d",
+    "skills/finance/okx-dex-market/SKILL.md": "3d407bf502ccaba97a75f446ab8dabedaa42ae6ddbeacf789c188452ac3396f5",
+    "skills/game-design/game-design-core/SKILL.md": "4e79e71a6e3730e950ece76190a2f3f1fc185df509d17b9eb2b67c27c3a4d7b2",
+    "skills/game-design/game-design-document/SKILL.md": "811d67d231c82d1445f9b112b77aa263c36ce9e8e7748f05281ec2691b2b92a5",
+    "skills/game-design/game-designer/SKILL.md": "01e8c46e3b0ef8e595fd8146d824481f0205e97fcbaa97c035524549921e3bee",
+    "skills/game-design/game-ui-design/SKILL.md": "e3bcd94bd13990b35e5091b42d51a123a6ed218b03e0fd227ac821b348de6172",
+    "skills/game-design/level-designer/SKILL.md": "5b35519eb6ca148c3982dd1524be829c7dced140ab98a17175b641abedf131b1",
+    "skills/game-design/pixel-art-sprites/SKILL.md": "d0c37253f18fda15e99797f03fed85cf4cb06f0772ef278d88f8b0c97e5c785b",
+    "skills/game-development/day-one-patch/SKILL.md": "426007abbf2e76d537430d64639730bf81fa94665bbdb35708ccc7b74ca3fb2d",
+    "skills/game-development/game-architecture/SKILL.md": "e282cbebad6d601dd04024121e49e0f7e2b9c3d8dea703dce6d12f37a63262e3",
+    "skills/game-development/game-development/SKILL.md": "a4b5348d1ce7ddc290b27d234a439f5c50b7030d71b02aaf9bb8704e54ee2e6e",
+    "skills/game-development/map-systems/SKILL.md": "1d58003af0ef53c4964654c5bc149de81530903adee03e97583dc1529aa99015",
+    "skills/game-development/unity-developer/SKILL.md": "3cc4416807473cc723b0f247acd18805050f056b1a0fa9414f0990c9a8b1be65",
+    "skills/game-development/unity-ecs-patterns/SKILL.md": "c0867745bf3edeb7c059f4b930cf1338d6d614d4dfb8af613a329eeaa17132dc",
+    "skills/marketing-and-ads/arcads-ads/SKILL.md": "96e9b8972b46a2d7aebdd71594100d448549018ec47a7f3cc3c9a266029fbdb8",
+    "skills/marketing-and-ads/arcads-amazon-listing-system/SKILL.md": "a48eb53390782a39fe24bfd9e7f29226b2812aa2aa164c094da0566e3c75c281",
+    "skills/marketing-and-ads/arcads-animated-ad/SKILL.md": "8cb926277abc3411256976a371700fbc3a7a47f83b5c24cd6cc80d7c8351e41c",
+    "skills/marketing-and-ads/arcads-cinematic-ads/SKILL.md": "a61c5b247e48e15c55810e733fc21ec50ebe9bd8fbf9025284ee0acf30916eb5",
+    "skills/marketing-and-ads/arcads-clone-hook/SKILL.md": "ac0e7b94804a25a40b12bcd6cd12ac1743f0a312a25eeac1f077abdde95829e4",
+    "skills/marketing-and-ads/arcads-clone-static-ad/SKILL.md": "dd83b56a1927c3dfc04062df20ab1c8de3cd6b2aac24beed9e61cab331ca2475",
+    "skills/marketing-and-ads/arcads-collage-motion/SKILL.md": "6988b14377838919a675fac60b2a54f03800a4b7fe2405bca664ef584aecb085",
+    "skills/marketing-and-ads/arcads-fpv-drone-path/SKILL.md": "546c6604f7bb79ff4d317e5d051aac8be6aace6b3286ecde586f016691dc6c95",
+    "skills/marketing-and-ads/arcads-image-to-motion/SKILL.md": "ce90524645110f8d7748fa68ed0830eaa646e4d2a31699997fadd699e7b0baa6",
+    "skills/marketing-and-ads/arcads-media-router/SKILL.md": "e5183cc113883921aae05910f412fbc273ac7d663daa3e1e781ad5c58dcc279d",
+    "skills/marketing-and-ads/arcads-omniflash-restyle/SKILL.md": "e34a438b7488705fbb71bf081b268b00cbeb1e9355df8daf28f508ac298f27be",
+    "skills/marketing-and-ads/arcads-pixar-ad/SKILL.md": "69a8a0fdd67656bd27e1142faeb19bc8e86adf96b1bd38798f7ef3eb32483185",
+    "skills/marketing-and-ads/arcads-spy-competitor-ads/SKILL.md": "eed0efc414c376eeb7bab8045e81178b23d008db34468bb23cd7a76eb25ee3bf",
+    "skills/marketing-and-ads/arcads-static-to-motion/SKILL.md": "d32bd1dfe15b9d2c30fb0e479b8a595760099e1b78940d2dcea2ecc5672b5e6a",
+    "skills/marketing-and-ads/arcads-tsunami-soundstage/SKILL.md": "de9be7f402770c1de6a238e117a50289b63ab0e27066e62797a90b10cb0bc428",
+    "skills/marketing-and-ads/arcads-viral-clone/SKILL.md": "d2b6a5345104efbc8a75c587ff386e8ea1db382d416c7180ee9140dd6dcc7f46",
+    "skills/personal-workflow/1f3d9-citylife/SKILL.md": "da0afa2691af2489d31662165ac9fc804cb1299114643c67f425b9f63d005fa3",
+    "skills/personal-workflow/explain-yourself/SKILL.md": "09a5cf7539d3e6383ce201d5929ecebd84da5b6537b939d40640cd7f3c7f2db6",
+    "skills/personal-workflow/grill-me/SKILL.md": "ed3da04ac3f1dfc14dd8fe4329e4dc0ce824f738e79b8e1ffd7b60a16b1119e5",
+    "skills/personal-workflow/grilling/SKILL.md": "ef5ce24ce1f7056153dca4e0a28deb1d3c10ce5afbe9879028d363a9985ce5f2",
+    "skills/personal-workflow/handoff/SKILL.md": "2bb72a671e055089c6a70f40d7e60fb33764bb79ca91de586a6c5c0360f633ca",
+    "skills/personal-workflow/roll-the-dice/SKILL.md": "3129b44855d8e1fefa6b1612663b66855e61f7e10c2946d814a33e5aadb13e89",
+    "skills/personal-workflow/teach/SKILL.md": "c21e685f6e3a7114f23afeecaff5ac0e38dc3f3e3879b770133c7f84ba28a326",
+    "skills/personal-workflow/to-questionnaire/SKILL.md": "6c6e0e74999a9ee04efe761f91567677a55f858775fb6538e59f0d52588c0135",
+    "skills/personal-workflow/wait-what/SKILL.md": "a7487d1726d9e6ee9c49df36b1cea54f71189a981484badbddeb681ec81fda82",
+    "skills/planning/brainstorming/SKILL.md": "ddef0e7094deb934b6e5ddc1964f95972a5639e7f71915eea31b4e2d831ab86d",
+    "skills/planning/managing-timelines/SKILL.md": "c8b66d3fc4648d70ebcc271f23f9f9423e9e03c0638449e460149769e1f63731",
+    "skills/programming/lua/SKILL.md": "b51e4b5e3501d76c10d4c0aba30467c735c68a12875f04817a5f213ade8be751",
+    "skills/reverse-engineering/reverse-engineer-anything/SKILL.md": "46b495fe6459c283c1432294ebe67799a54391cd2ded197ee7df3f8ac0a8ac8f",
+    "skills/reverse-engineering/reverse-engineering-tools/SKILL.md": "dbab9e1612f730515de36b43bedccf88636e01874b7ec140a3aed4bdab258ff4",
+    "skills/reverse-engineering/reverse-skill-router/SKILL.md": "05e67327503ec2c2dcf03977866ec3092398a2608c6dff766f828bdb38bfbd95",
+    "skills/review-and-resilience/adversarial-review/SKILL.md": "7bd0056030d7fdbb621eb5965c1e1574cba1b77004119cbede9cb466287ebe63",
+    "skills/review-and-resilience/chaos-engineer/SKILL.md": "d2f9541dd71e7964e4b76f9d858759ce6d7e3012ba98dfe288043a1b9b0a9949",
+    "skills/sports/sports-betting-analyzer/SKILL.md": "ebd1209c2594ee97444cebf4e3f55a172ff7984e31d28e1c24ca10855f4a08fa",
+    "skills/unreal-engine/uefn-toolbelt/SKILL.md": "28cf74733b5ec6007e12b4093fcc736343c66bfeb91c7507731a10a980fe0dbd",
+    "skills/unreal-engine/unreal-engine/SKILL.md": "948447a74df62395d1abf7ee95a96523d9a795449679e48d97cbf74377897f18",
+    "skills/unreal-engine/unreal-engine-cpp-pro/SKILL.md": "8529e6e2fa860b8e2d2d0c5707acc2db6c23e9506be845f20d20da3849107117",
+    "skills/unreal-engine/unreal-multiplayer-architect/SKILL.md": "4d41231348b6143b6e30af66b054b02ba83cedd8641551b88b4eb76658e84074",
+    "skills/unreal-engine/unreal-systems-engineer/SKILL.md": "4e3ebf717f9e0aa15af7653cb70cba3e6691866b87f1fdbdb96cda06d1eaa2bf",
+    "skills/unreal-engine/unreal-technical-artist/SKILL.md": "7d8b58e37daa04a01458cefe1d48f905366edbc54829d3c89cdb2333c9a2dcae",
+    "skills/unreal-engine/unreal-world-builder/SKILL.md": "c83c62b7ba8e8717ea60b770614d956bd1ad59978b7dbc7d768c45e46f9297cc",
+    "skills/video-and-audio/ai-video-generation/SKILL.md": "4d2db82ca2be6d0cca3b437aae34c3a111eefd09a3d2726e06b577e1c4a51598",
+    "skills/video-and-audio/seedance-2-0-prompter/SKILL.md": "f83b1367aa19bd018d78d4aaac21e354aa6eab1624ddb742d09d3d85f6de9601",
+    "skills/video-and-audio/video-editing/SKILL.md": "b2d80e171d133ba6d9a811defed6666f956bcb1982a2b6f79de4b4f2981752bb"
+  },
+  "derived_index": {
+    "schema_version": 1,
+    "discovery": "derived-from-pinned-catalog",
+    "revision": "594499cb9a842822580d847d85abdf832814c27c",
+    "count": 140,
+    "categories": [
+      "3d-and-web",
+      "business-planning",
+      "cloud-and-aws",
+      "coding-workflow",
+      "design-and-art",
+      "engineering",
+      "finance",
+      "game-design",
+      "game-development",
+      "marketing-and-ads",
+      "personal-workflow",
+      "planning",
+      "programming",
+      "reverse-engineering",
+      "review-and-resilience",
+      "sports",
+      "unreal-engine",
+      "video-and-audio"
+    ],
+    "skills": [
+      {
+        "id": "3d-and-web/aify-blender",
+        "name": "aify-blender",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/aify-blender/SKILL.md",
+        "description": "Offline Text-to-Image Diffusion (DirectML GPU/CPU) and PBR Texture Synthesis for Blender. Reconstructed from Ai.Fy Unity asset with prompt presets, Sobel normal maps, roughness extraction, and automated Principled BSDF material setup.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "3d-and-web/antigravity-design-expert",
+        "name": "antigravity-design-expert",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/antigravity-design-expert/SKILL.md",
+        "description": "Design spatial web interfaces with floating layers, glass surfaces, isometric layouts, and purposeful 3D motion. Use for an explicitly requested antigravity visual direction.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "3d-and-web/blender-addon-engineer",
+        "name": "blender-addon-engineer",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/blender-addon-engineer/SKILL.md",
+        "description": "Create and debug Blender Python add-ons, operators, panels, asset validators and pipeline exporters. Use when repetitive Blender work needs artist-facing tools or reliable batch automation.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "3d-and-web/blender-mcp",
+        "name": "blender-mcp",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/blender-mcp/SKILL.md",
+        "description": "Inspect and manipulate Blender through an available MCP connection, extract scene/material/animation data and diagnose bridge failures. Use for Blender MCP work and export-loss troubleshooting; supports a local bpy fallback.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "3d-and-web/blender-studio",
+        "name": "blender-studio",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/blender-studio/SKILL.md",
+        "description": "Direct Blender asset production using 94 specialist guides for props, characters, environments, geometry nodes, art styles, game genres, rigging and engine handoff. Use for coordinated Blender art production and style-specific workflows.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "3d-and-web/blender-web-pipeline",
+        "name": "blender-web-pipeline",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/blender-web-pipeline/SKILL.md",
+        "description": "Export Blender assets to glTF/GLB for web delivery, optimize export copies, generate LODs and batch-convert blend files. Use for Blender-to-Three.js, Babylon.js or browser asset handoffs.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "3d-and-web/blender",
+        "name": "blender",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/blender/SKILL.md",
+        "description": "Build and revise Blender scenes through modeling, sculpting, UVs, materials, rigging, animation and engine handoff. Use for general Blender production workflows and interface guidance.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "3d-and-web/cc-blender-toolkit",
+        "name": "cc-blender-toolkit",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/cc-blender-toolkit/SKILL.md",
+        "description": "Plan and execute Blender modeling, shading, rendering, animation, reference reconstruction and checked export using the 30-guide cc-blender toolkit. Use for multi-stage Blender production, multiview fitting, texture coverage and collision/bake handoffs.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "3d-and-web/dream-loop",
+        "name": "dream-loop",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/dream-loop/SKILL.md",
+        "description": "Build a game or app from a description so that a live screenshot matches a generated rendering. Use when the user says \"dream loop\" or asks for something built to a very high level of graphical fidelity.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "3d-and-web/frontend-design",
+        "name": "frontend-design",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/frontend-design/SKILL.md",
+        "description": "Create distinctive frontend visual design when building new interfaces or reshaping existing ones. Use for aesthetic direction, typography, palette, hierarchy, and deliberate layouts tied to the brief.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "3d-and-web/frontend-motion-wizard",
+        "name": "frontend-motion-wizard",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/frontend-motion-wizard/SKILL.md",
+        "description": "Add responsive UI motion, spring animations, and micro-interactions to React or Svelte/SvelteKit frontends. Use when auditing or improving overlays, active indicators, hover and press feedback, mobile breakpoints, or reduced-motion accessibility. Use the project's existing styling system and framework-native motion where appropriate.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "3d-and-web/high-end-visual-design",
+        "name": "high-end-visual-design",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/high-end-visual-design/SKILL.md",
+        "description": "Teaches the AI to design like a high-end agency. Defines the exact fonts, spacing, shadows, card structures, and animations that make a website feel expensive. Blocks all the common defaults that make AI designs look cheap or generic.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "3d-and-web/image-to-code",
+        "name": "image-to-code",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/image-to-code/SKILL.md",
+        "description": "Elite website image-to-code skill for Codex. For visually important web tasks, it must first generate the design image(s) itself, deeply analyze them, then implement the website to match them as closely as possible. In Codex, it must prefer large, readable, section-specific images instead of tiny compressed boards, generate fresh standalone images for sections or detail views instead of cropping old ones, avoid lazy under-generation, avoid cards-inside-cards-inside-cards UI, and keep the hero clean, spacious, readable, and visible on a small laptop.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "3d-and-web/img2blender",
+        "name": "img2blender",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/img2blender/SKILL.md",
+        "description": "Reconstruct an object or character from reference images as an editable Blender model, with reproducible bpy scripts and visual correction passes. Use for image-to-Blender modeling, reference matching, materials, and requested rigging or export.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "3d-and-web/img2threejs",
+        "name": "img2threejs",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/img2threejs/SKILL.md",
+        "description": "Turn an object or character reference image into a quality-gated, animation-ready procedural Three.js model built in code. Use for image-to-3D reconstruction, detail-accurate object rebuilds, stylized/likeness-maximized human characters, sculpt specs, and staged code generation.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "3d-and-web/llm-blender-agent",
+        "name": "llm-blender-agent",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/llm-blender-agent/SKILL.md",
+        "description": "Create and edit Blender scenes from natural language using the LLM-Blender-Agent workflow. Use for saofund agent integration, its socket protocol and optional provider or Hunyuan workflows; native bpy supports ordinary local modeling without cloud APIs.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "3d-and-web/next-best-practices",
+        "name": "next-best-practices",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/next-best-practices/SKILL.md",
+        "description": "Next.js best practices - file conventions, RSC boundaries, data patterns, async APIs, metadata, error handling, route handlers, image/font optimization, bundling",
+        "routing_metadata": {}
+      },
+      {
+        "id": "3d-and-web/threejs-postprocessing",
+        "name": "threejs-postprocessing",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/threejs-postprocessing/SKILL.md",
+        "description": "Three.js post-processing - EffectComposer, bloom, DOF, screen effects. Use when adding visual effects, color grading, blur, glow, or creating custom screen-space shaders.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "3d-and-web/ui-animation",
+        "name": "ui-animation",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/ui-animation/SKILL.md",
+        "description": "Build, review, debug, and measure UI motion, including springs, gestures, scroll effects, easing from recordings, and sparse interface sounds. Use for interaction animation and motion matching.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "3d-and-web/voxify",
+        "name": "voxify",
+        "category": "3d-and-web",
+        "path": "skills/3d-and-web/voxify/SKILL.md",
+        "description": "Procedural mesh-to-voxel modifier workflows in Blender using Voxify Geometry Nodes. Use when voxelizing meshes, adjusting voxel resolution, configuring procedural materials, setting up assembly/disassembly animations, or baking instances into real geometry.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "business-planning/business-plan-engine",
+        "name": "business-plan-engine",
+        "category": "business-planning",
+        "path": "skills/business-planning/business-plan-engine/SKILL.md",
+        "description": "商业计划书（BP）撰写专家。当用户提到写商业计划书、做BP、路演PPT、融资计划书、创业计划书、投资计划书、项目计划书、商业提案、BP优化、BP诊断、BP模板、商业模式设计、财务预测、估值逻辑、投资人关注点、BP常见错误等与商业计划书相关的需求时使用此技能。支持融资BP、内部规划BP、比赛路演BP、政府申报BP、合资方案等多种类型。",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/amazon-bedrock",
+        "name": "amazon-bedrock",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/amazon-bedrock/SKILL.md",
+        "description": "Builds generative AI applications on Amazon Bedrock. Covers model invocation (Converse API, InvokeModel), RAG with Knowledge Bases, Bedrock Agents, Guardrails, and AgentCore (including the Harness managed agent loop). Applies when invoking models, setting up Knowledge Bases, creating agents, applying guardrails, deploying to AgentCore, migrating/porting/converting a Bedrock Agent (including inline agents) to an AgentCore Harness, troubleshooting Bedrock errors (ThrottlingException, AccessDeniedException), or choosing models (Claude, Llama, Nova, Titan). Also for prompt caching, quota and throttling diagnosis, cost tracking, migrating between Claude model generations (4.5 to 4.6 to 4.7), chunking strategies, API selection (Converse vs InvokeModel), guardrail capabilities, and model selection. Also covers AgentCore Payments (x402, microtransactions, Payment Manager, Connector, Instrument, Coinbase CDP, Stripe Privy, paid endpoints, agent payments). NOT for custom model training, Rekognition, or Comprehend.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-ai-ml",
+        "name": "aws-ai-ml",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-ai-ml/SKILL.md",
+        "description": "Selects, deploys, and customizes AI models on Amazon SageMaker. Fine-tuning (SFT, DPO, RLVR, RLAIF), model selection, dataset preparation, evaluation, deployment to SageMaker endpoints or Bedrock, and endpoint diagnostics. Covers the full lifecycle from planning through production. Use when fine-tuning models on SageMaker, choosing/selecting which base model to customize or fine-tune from SageMaker Hub, finding a model to deploy without fine-tuning, transforming datasets for training, checking data readiness, evaluating model quality, deploying to endpoints, setting up IAM roles and S3 buckets for training jobs, or managing a SageMaker Managed MLflow app. Also use to check endpoint health, diagnose failures, debug latency or errors, or view container logs and CloudWatch metrics. Covers Serverless Model Customization, Nova and OSS deployment paths, and PySDK v3 usage. NOT for Ground Truth labeling, Feature Store, or general-purpose AWS infrastructure.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-auth",
+        "name": "aws-auth",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-auth/SKILL.md",
+        "description": "Adds user authentication to web and mobile apps with Amazon Cognito (user pools and identity pools) and the AWS Amplify client auth libraries. Covers sign-up/sign-in flows and the login page (Cognito-hosted UI / managed login), MFA, password policies, OAuth 2.0 / OIDC flows (auth-code + PKCE, client credentials), social/SAML federation, tokens (ID/access/refresh, rotation, revocation, storage), Cognito Lambda triggers, identity pools (temp AWS creds), and gating API Gateway (or ALB) routes to signed-in users via Cognito/JWT authorizers. Applies when adding a login or sign-up page, configuring a user pool or app client, choosing user pool vs identity pool, wiring social/SAML, refreshing tokens, requiring sign-in on an API Gateway or ALB, or debugging redirect_uri/token/MFA/CORS/federation errors. Does NOT cover Amplify Gen2 backend definitions (defineAuth, npx ampx → aws-amplify), IAM/STS/Identity Center (→ aws-iam), or API Gateway/Lambda resource config beyond the authorizer (→ aws-serverless).",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-billing-and-cost-management",
+        "name": "aws-billing-and-cost-management",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-billing-and-cost-management/SKILL.md",
+        "description": "Analyze AWS costs, find savings, manage budgets, evaluate Savings Plans and Reserved Instances, right-size EC2/Lambda/RDS/EBS with Compute Optimizer, look up service pricing, query CUR with Athena, detect cost anomalies, scope costs to billing views, and monitor Free Tier usage. Triggers on: AWS bill, cost analysis, reduce spend, savings plan, reserved instance, right-size, budget alert, cost optimization, pricing, free tier, cost anomaly, CUR, cost audit, billing view, billing view ARN.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-blocks",
+        "name": "aws-blocks",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-blocks/SKILL.md",
+        "description": "Guides building full-stack applications with AWS Blocks — an Infrastructure-from-Code framework. Applies when creating APIs, selecting Building Blocks (KVStore, DistributedTable, Database, AuthBasic, AuthCognito, Realtime, AsyncJob, FileBucket, etc.), running local development, or deploying AWS Blocks applications. Also covers AWS Blocks topics with validated, version-specific patterns that prevent common mistakes. Triggers when user mentions AWS Blocks; project has aws-blocks/ directory; code imports @aws-blocks packages.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-cdk",
+        "name": "aws-cdk",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-cdk/SKILL.md",
+        "description": "Authors, deploys, and troubleshoots AWS infrastructure using CDK with TypeScript or Python. Covers best practices, stack architecture, and construct patterns. Always use when writing CDK constructs, bootstrapping environments, running cdk deploy/synth/diff, fixing CDK or CloudFormation errors, planning stack structure, importing existing resources, resolving drift, or refactoring stacks without resource replacement.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-cloudformation",
+        "name": "aws-cloudformation",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-cloudformation/SKILL.md",
+        "description": "Authors, validates, and troubleshoots AWS CloudFormation templates. Covers template authoring with secure defaults, pre-deployment validation (cfn-lint, cfn-guard, change sets), CloudFormation Express mode for faster deployments, and root-cause diagnosis of failed stacks using CloudFormation events and CloudTrail correlation.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-compute",
+        "name": "aws-compute",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-compute/SKILL.md",
+        "description": "Provisions, scales, and operates Amazon EC2 virtual-machine workloads: instance-type selection (Graviton/Arm64, burstable T credits, GPU, instance store vs EBS), launch templates, Auto Scaling groups (scaling policies, instance refresh, mixed instances, Spot, warm pools, lifecycle hooks), IMDSv2, placement groups, Elastic IPs, AMI lifecycle, and Systems Manager fleet operations (Session Manager, Run Command, Patch Manager). Applies to EC2 instance and fleet questions, InsufficientInstanceCapacity, CPU-credit/surplus charges, IMDSv2 401s, instances stuck in Pending:Wait, ASG not replacing unhealthy instances, status-check failures, SSH refused/timed out, or instances missing as SSM managed nodes. For a single secure instance launch, the launching-ec2-instance-with-best-practices skill is more appropriate; for instance profiles, see setting-up-ec2-instance-profiles; for Image Builder, see amazon-ec2-image-builder. Does NOT cover Lambda, ECS/Fargate, EKS, VPC/ALB/NLB design, or IAM policy authoring.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-containers",
+        "name": "aws-containers",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-containers/SKILL.md",
+        "description": "Builds and deploys containerized workloads on Elastic Kubernetes Service (EKS), Elastic Container Service (ECS), Fargate, and ECR (Elastic Container Registry). Covers general EKS knowledge, Karpenter, AWS Load Balancer Controller and leveraging various open source Kubernetes projects with EKS. Covers general ECS knowledge, task definitions, Fargate services, ECS Exec, ECS Express Mode and ECS Managed Instances. Covers general Elastic Beanstalk knowledge, Elastic Beanstalk configuration and platforms supported by Elastic Beanstalk. Covers general ECR knowledge, ECR repository setup and lifecycle policies. Applies when deploying, debugging, or optimizing containers on AWS. Should be used instead of relying on internal knowledge for these services.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-database",
+        "name": "aws-database",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-database/SKILL.md",
+        "description": "Routes any task involving AWS databases — choosing, comparing, recommending, getting started with, or operating a database — to the correct service-specific skill. Supersedes general training-data knowledge with post-training service updates, corrected limitations, and decision procedures for relational (Aurora, DSQL, RDS), key-value (DynamoDB), wide-column (Keyspaces), document (DocumentDB), graph (Neptune), time-series (Timestream), and in-memory/caching (ElastiCache, MemoryDB) workloads. Activates when a user describes building an application on AWS that will store, retrieve, or manage data, even if they do not mention 'database' explicitly.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-deployment",
+        "name": "aws-deployment",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-deployment/SKILL.md",
+        "description": "Configures CI/CD pipelines using AWS CodePipeline, CodeBuild, CodeDeploy, CodeConnections, and CodeArtifact. Covers CodePipeline V2 (triggers, variables, execution modes, cross-account), buildspec.yml (caching, VPC, Docker), CodeDeploy strategies (blue/green, canary, linear), CodeArtifact (private package registries, auth tokens, cross-account), and source connections (GitHub, GitLab, Bitbucket). Applies when CodePipeline, CodeBuild, CodeDeploy, CodeConnections, CodeArtifact, buildspec.yml, appspec.yml, or CI/CD pipeline orchestration is referenced. Does NOT cover: ECS Fargate services or task definitions (use aws-containers), CDK Pipelines or cdk deploy (use aws-cdk), sam deploy (use aws-serverless), Amplify deployments (use aws-amplify), or GitHub Actions/GitLab CI.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-iam",
+        "name": "aws-iam",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-iam/SKILL.md",
+        "description": "Provides verified corrections for IAM behaviors that AI agents frequently get wrong — policy evaluation edge cases, trust policy gotchas, STS session limits, Organizations quirks, and SAML/MFA specifics. Also provides structured workflows for IAM role management and baseline policy generation from application source code or a Terraform plan JSON. Covers condition operator safety (ForAnyValue/ForAllValues with Null checks), bucket policy deny patterns (VPC endpoint restrictions, org paths), confused deputy protection, and service role creation for AWS services (Glue, CloudTrail, Lambda, ECS, etc.) with aws:SourceAccount/aws:SourceArn trust conditions. Applies when creating IAM roles, writing IAM or bucket policies, generating policies from application source code or a Terraform plan JSON, working with STS, Organizations, or condition operators, or any task needing a service or execution role. Does not cover non-IAM authorization like Cognito user-pool policies or app-level RBAC.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-messaging-and-streaming",
+        "name": "aws-messaging-and-streaming",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-messaging-and-streaming/SKILL.md",
+        "description": "Guides general use of AWS messaging and streaming services. Covers Amazon SQS, Amazon SNS, Amazon EventBridge, Amazon MQ, Amazon Kinesis Data Streams, Amazon Data Firehose, Amazon Managed Service for Apache Flink, and Amazon Managed Streaming for Apache Kafka (MSK).  Use when reasoning about messaging and streaming patterns. Also identifies which AWS service owns each customer communication channel: email (Amazon SES), and WhatsApp, SMS, MMS, RCS, voice and mobile push (the AWS End User Messaging family of services). Routes the request to the specialized skill for that channel. Defers to the channel's specialized skill when the user already named a specific channel. In general, use specific skills or documentation searches for detailed service-specific questions. Do NOT use for MSK or Managed Service for Apache Flink questions, prefer specific skills. Does not configure customer communication channels; defers to specific skills.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-networking",
+        "name": "aws-networking",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-networking/SKILL.md",
+        "description": "Routes AWS networking requests to the correct service skill for implementation. Covers Route 53 (DNS, health checks, routing policies, Resolver, DNS Firewall), CloudFront (caching, edge, OAC, mTLS, signed URLs), Transit Gateway (multi-VPC hub, segmentation, centralized egress), Direct Connect (hybrid link, DX Gateway, MACsec), Site-to-Site VPN (IPsec tunnels, static or BGP), WAF (web ACLs, AWS Managed Rules, rate-based rules, Bot and Fraud Control), and Shield Advanced (L3/L4 DDoS). Applicable when creating, configuring, troubleshooting, or designing across these services, choosing between them, or diagnosing connectivity or traffic-filtering issues. Not for VPC subnets and route tables, load balancers, VPC endpoints, PrivateLink, API Gateway, IAM policy logic, container or serverless networking, or IaC authoring.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-observability",
+        "name": "aws-observability",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-observability/SKILL.md",
+        "description": "Builds, configures, debugs, and optimizes AWS observability with CloudWatch (Log Insights, Metrics, Alarms, Dashboards, EMF), X-Ray, CloudTrail, and ADOT (AWS Distro for OpenTelemetry), AND enables/onboards services to Application Signals using ADOT auto-instrumentation SDKs. Covers Log Insights queries, alarms (metric, composite, anomaly), dashboards, custom metrics/EMF, X-Ray tracing and sampling, ADOT collector config, CloudTrail auditing, and end-to-end Application Signals enablement via ADOT SDKs (CloudWatch Observability EKS add-on, CloudWatch Agent IAM, OTLP endpoints, ServiceEvents, Dynamic Instrumentation), breakpoint and snapshot in Dynamic Instrumentation, live data capture in running service, debug without redeploying. Applies to CloudWatch, alarms, dashboards, EMF, X-Ray, traces, CloudTrail,  ADOT, monitoring, synthetics/canaries, OR enabling/onboarding/instrumenting a service for Application Signals. Not for app logging or security threat detection.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-sdk-js-v3-usage",
+        "name": "aws-sdk-js-v3-usage",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-sdk-js-v3-usage/SKILL.md",
+        "description": "AWS SDK for JavaScript v3 development patterns. Use when writing JavaScript or TypeScript code that uses AWS services via @aws-sdk/* packages (aws-sdk-js-v3), or when asked about schemas, runtime validation, serialization, or code generation in the context of the JS/TS AWS SDK.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-sdk-python-usage",
+        "name": "aws-sdk-python-usage",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-sdk-python-usage/SKILL.md",
+        "description": "AWS SDK for Python (boto3/botocore) development patterns. You MUST use this skill when writing Python code that uses AWS services via boto3 or botocore. This includes creating service clients or resources, configuring sessions and credentials, handling errors with ClientError, using paginators and waiters, S3 file transfers and presigned URLs, DynamoDB table operations, and any boto3/botocore client configuration. Use this skill whenever Python code imports boto3 or botocore, or when the user asks about AWS operations in Python.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-sdk-swift-usage",
+        "name": "aws-sdk-swift-usage",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-sdk-swift-usage/SKILL.md",
+        "description": "AWS SDK for Swift development patterns. Use when writing Swift code that uses AWS services via aws-sdk-swift package.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-security",
+        "name": "aws-security",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-security/SKILL.md",
+        "description": "Covers AWS security services and workflows — Security Hub V2 (OCSF) findings, connectors, aggregators, automation rules, and security posture summaries; Security Hub CSPM (V1/ASFF) controls and compliance standards; GuardDuty threat findings; Inspector vulnerability findings; Macie sensitive data findings; Detective investigation; and Security Lake configuration and data aggregation. Applicable when questions involve security posture, Exposure findings, CSPM failed controls, threat findings, vulnerability findings, sensitive data findings, automation rules, or cross-service security configuration across AWS environments. Procedures use standard AWS CLI syntax and work with or without the AWS MCP server.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-serverless",
+        "name": "aws-serverless",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-serverless/SKILL.md",
+        "description": "Builds, deploys, manages, debugs, configures, and optimizes serverless applications on AWS using Lambda, API Gateway, Step Functions, EventBridge, and SAM/CDK. Covers cold starts, CORS debugging, event source mappings, troubleshooting, concurrency, SnapStart, Powertools, function URLs, EventBridge Scheduler, Lambda layers, and production readiness. Triggers on mentions of Lambda, API Gateway, Step Functions, SAM templates, CDK serverless stacks, DynamoDB stream triggers, SQS event sources, cold starts, timeouts, 502/504 errors, throttling, concurrency, CORS, Powertools, or any event-driven architecture on AWS, even without the word \"serverless.\" Does not apply to EC2, ECS/Fargate containers, or Amplify hosting.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/aws-storage",
+        "name": "aws-storage",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/aws-storage/SKILL.md",
+        "description": "Selects, investigates, and compares AWS object, file, and block storage services, and answers cost, performance, configuration, security, and troubleshooting questions about storage services. Applies when a user asks where to store or archive data based on their usage patterns; which storage service to choose or how two compare; how to migrate data from on-premises or between AWS services; how to protect, replicate, or recover data; how to optimize storage costs; where to deploy shared NFS, SMB, or POSIX file systems; where to store vector embeddings or tabular data; what storage backs enterprise file shares, self-managed databases on EC2, VMware, or stateful containers; or asks what an AWS storage service can do or how it works. Relevant for storage needs for workloads such as AI/ML, analytics, EDA, HPC, media, genomics, or financial trading. Not applicable for SQL query engines (Athena, Spark, Redshift, EMR), ETL (Glue), streaming (Kafka, MSK, Kinesis), or managed database services (RDS, Aurora, DynamoDB).",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/launch-with-aws",
+        "name": "launch-with-aws",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/launch-with-aws/SKILL.md",
+        "description": "Migrates vibe-coded web applications to AWS. Handles the full workflow from analysis through migration to deployment, producing deployable AWS Blocks infrastructure code. Supports full-stack apps built with vibe-coding platforms (Lovable, Bolt.new, Replit) and frontend web applications and websites: React, Vue, Angular, Next.js, Nuxt, Astro, SvelteKit, Gatsby, Vite, Svelte, Solid, Docusaurus, and others (static sites, SPAs, and SSR frameworks with static export). Triggers on: launch with AWS, launch on AWS, deploy to AWS, migrate to AWS, host my app on AWS, move my app to AWS, transfer my app to AWS. Activates when the user wants to migrate a vibe-coded app or frontend web app to AWS, even if they don't say 'migrate' explicitly.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "cloud-and-aws/signing-in-to-aws",
+        "name": "signing-in-to-aws",
+        "category": "cloud-and-aws",
+        "path": "skills/cloud-and-aws/signing-in-to-aws/SKILL.md",
+        "description": "Gets AWS credentials for CLI/SDK access via `aws login`. Activates when a developer needs to authenticate to AWS for local development, when an AWS operation fails due to missing or expired credentials, or when someone asks about setting up AWS access. Triggers: \"set up AWS\", \"configure AWS\", \"aws login\", \"get credentials\", \"authenticate\", \"session expired\", \"token expired\", \"no credentials\", \"AccessDeniedException\" with no configured credentials.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/api-and-interface-design",
+        "name": "api-and-interface-design",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/api-and-interface-design/SKILL.md",
+        "description": "Guides stable API and interface design. Use when designing APIs, module boundaries, or any public interface. Use when creating REST or GraphQL endpoints, defining type contracts between modules, or establishing boundaries between frontend and backend.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/browser-testing-with-devtools",
+        "name": "browser-testing-with-devtools",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/browser-testing-with-devtools/SKILL.md",
+        "description": "Tests in real browsers via Chrome DevTools MCP. Use when building or debugging anything that runs in a browser. Use when you need to inspect the DOM, capture console errors, analyze network requests, profile performance, or verify visual output with real runtime data. Requires the chrome-devtools MCP server to be configured.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/build",
+        "name": "build",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/build/SKILL.md",
+        "description": "Provides the build command adapter. Use when the user invokes build, build auto, or build all to execute a pending task or an authorized plan.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/ci-cd-and-automation",
+        "name": "ci-cd-and-automation",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/ci-cd-and-automation/SKILL.md",
+        "description": "Automates CI/CD pipeline setup. Use when setting up or modifying build and deployment pipelines. Use when you need to automate quality gates, configure test runners in CI, or establish deployment strategies.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/code-review-and-quality",
+        "name": "code-review-and-quality",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/code-review-and-quality/SKILL.md",
+        "description": "Conducts multi-axis code review. Use before merging any change. Use when reviewing code written by yourself, another agent, or a human. Use when you need to assess code quality across multiple dimensions before it enters the main branch. Use when asked to review a diff or a pull request, even when the diff is pasted inline.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/code-simplification",
+        "name": "code-simplification",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/code-simplification/SKILL.md",
+        "description": "Simplifies code for clarity. Use when refactoring code for clarity without changing behavior. Use when code works but is harder to read, maintain, or extend than it should be. Use when reviewing code that has accumulated unnecessary complexity.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/constraint-driven-development",
+        "name": "constraint-driven-development",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/constraint-driven-development/SKILL.md",
+        "description": "Establishes a project's quality bar as a written contract and stops agents quietly lowering it. Interviews the user on which dimensions matter, supplies sane default thresholds when they have no number in mind, records everything in CONSTRAINTS.md, and watches the diff for a weakened bar — new @ts-ignore or eslint-disable suppressions, skipped or deleted tests, assertions stripped out, unimplemented stubs, thresholds edited down. Use when no quality bar is written down, when the user says \"set up constraints\" or \"define our standards\", when the user wants dimensions they care about — accessibility, web performance, coverage — set up as enforced constraints, when an agent keeps silencing checks or skipping tests to get to green, when you need a coverage or performance threshold and don't know what number to pick, or when an agent writes more code than anyone will read.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/context-engineering",
+        "name": "context-engineering",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/context-engineering/SKILL.md",
+        "description": "Optimizes agent context setup. Use when starting a new session, when agent output quality degrades, when switching between tasks, or when you need to configure rules files and context for a project.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/context7-mcp",
+        "name": "context7-mcp",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/context7-mcp/SKILL.md",
+        "description": "This skill should be used when the user asks about libraries, frameworks, API references, or needs code examples. Activates for setup questions, code generation involving libraries, or mentions of specific frameworks like React, Vue, Next.js, Prisma, Supabase, etc.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/debugging-and-error-recovery",
+        "name": "debugging-and-error-recovery",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/debugging-and-error-recovery/SKILL.md",
+        "description": "Guides systematic root-cause debugging. Use when tests fail, builds break, something that worked yesterday broke, behavior doesn't match expectations, or you encounter any unexpected error. Use when you need to figure out what broke and why — a systematic approach to finding and fixing the root cause rather than guessing.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/deprecation-and-migration",
+        "name": "deprecation-and-migration",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/deprecation-and-migration/SKILL.md",
+        "description": "Manages deprecation and migration. Use when removing old systems, APIs, or features. Use when migrating users from one implementation to another. Use when migrating a database schema in production, such as renaming or dropping a column without downtime (expand/contract). Use when deciding whether to maintain or sunset existing code.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/documentation-and-adrs",
+        "name": "documentation-and-adrs",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/documentation-and-adrs/SKILL.md",
+        "description": "Records decisions and documentation. Use when you need to document an architecture decision (ADR) or the reasoning behind a design choice, when changing public APIs, shipping features, or when you need to record context that future engineers and agents will need to understand the codebase.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/doubt-driven-development",
+        "name": "doubt-driven-development",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/doubt-driven-development/SKILL.md",
+        "description": "Subjects every non-trivial decision to a fresh-context adversarial review before it stands. Use when you want every assumption cross-examined before proceeding, when stress-testing a plan for hidden failure modes, when correctness matters more than speed, when working in unfamiliar code, when stakes are high (production auth, security-sensitive logic, a high-stakes migration, irreversible operations), or any time a confident output would be cheaper to verify now than to debug later.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/frontend-ui-engineering",
+        "name": "frontend-ui-engineering",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/frontend-ui-engineering/SKILL.md",
+        "description": "Builds production-quality, accessible, responsive user-facing UIs. Use when building or modifying interfaces and pages, creating components, implementing layouts, meeting WCAG accessibility requirements, managing state, or when the output needs to look and feel production-quality rather than AI-generated.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/git-workflow-and-versioning",
+        "name": "git-workflow-and-versioning",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/git-workflow-and-versioning/SKILL.md",
+        "description": "Structures git workflow practices. Use when making any code change. Use when committing, branching, resolving conflicts, splitting uncommitted work in a messy working tree into clean atomic commits, opening or reviewing a pull request (PR), pushing to a remote, or when you need to organize work across multiple parallel streams. Use when cutting a release, choosing a semantic version bump, tagging, or writing a changelog.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/idea-refine",
+        "name": "idea-refine",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/idea-refine/SKILL.md",
+        "description": "Refines raw ideas into sharp, actionable concepts through structured divergent and convergent thinking. Use when an idea is still vague, when you need to stress-test assumptions before committing to a plan, or when you want to expand options before converging on one. Triggers on \"ideate\", \"refine this idea\", or \"stress-test my plan\".",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/incremental-implementation",
+        "name": "incremental-implementation",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/incremental-implementation/SKILL.md",
+        "description": "Delivers changes incrementally in thin, verifiable slices. Use when implementing any feature or change that touches more than one file, or when picking up the next task from a plan. Use when rolling a change out behind a feature flag, when you're about to write a large amount of code at once, or when a task feels too big to land in one step.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/interview-me",
+        "name": "interview-me",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/interview-me/SKILL.md",
+        "description": "Extracts what the user actually wants instead of what they think they should want. Achieves this through one-question-at-a-time interview until ~95% confidence about the underlying intent. Use when an ask is underspecified (\"build me X\" without \"for whom\" or \"why now\"), when the user explicitly invokes (\"interview me\", \"grill me\", \"are we sure?\", \"stress-test my thinking\"), or when you catch yourself silently filling in ambiguous requirements before any plan, spec, or code exists.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/observability-and-instrumentation",
+        "name": "observability-and-instrumentation",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/observability-and-instrumentation/SKILL.md",
+        "description": "Instruments code so production behavior is visible and diagnosable. Use when adding logging, metrics, tracing, or alerting. Use when shipping any feature that runs in production and you need evidence it works. Use when production issues are reported but you can't tell what happened from the available data.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/performance-optimization",
+        "name": "performance-optimization",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/performance-optimization/SKILL.md",
+        "description": "Optimizes application performance across frontend, backend, queries, and databases. Use when performance requirements exist, when you suspect performance regressions, when Core Web Vitals or load times need improvement, when N+1 query patterns need fixing, or when profiling reveals bottlenecks.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/planning-and-task-breakdown",
+        "name": "planning-and-task-breakdown",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/planning-and-task-breakdown/SKILL.md",
+        "description": "Breaks work into ordered tasks. Use when you have a spec or clear requirements and need to break work into implementable tasks. Use when a task feels too large to start, when you need to estimate scope, or when parallel work is possible.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/ponytail",
+        "name": "ponytail",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/ponytail/SKILL.md",
+        "description": "Lazy senior dev mode: the smallest change that fully solves the task, and a reply a busy human understands in one read. Use on any coding task (writing, fixing, refactoring, reviewing, choosing dependencies) and when the user says \"ponytail\", \"be lazy\", \"simplest solution\", \"yagni\", or complains about over-engineering or bloat. Levels: lite, full (default), ultra, no-questions-asked.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/ponytail-full",
+        "name": "ponytail-full",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/ponytail-full/SKILL.md",
+        "description": "Use Ponytail full mode when the user selects $ponytail-full or requests Ponytail full.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/ponytail-lite",
+        "name": "ponytail-lite",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/ponytail-lite/SKILL.md",
+        "description": "Use Ponytail lite mode when the user selects $ponytail-lite or requests Ponytail lite.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/ponytail-no-questions-asked",
+        "name": "ponytail-no-questions-asked",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/ponytail-no-questions-asked/SKILL.md",
+        "description": "Use Ponytail no-questions-asked mode when the user selects $ponytail-no-questions-asked or requests Ponytail no-questions-asked.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/ponytail-ultra",
+        "name": "ponytail-ultra",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/ponytail-ultra/SKILL.md",
+        "description": "Use Ponytail ultra mode when the user selects $ponytail-ultra or requests Ponytail ultra.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/security-and-hardening",
+        "name": "security-and-hardening",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/security-and-hardening/SKILL.md",
+        "description": "Hardens code against vulnerabilities. Use when auditing an input handler for vulnerabilities, when handling user input, adding authentication to API endpoints, protecting authorization, data storage, or external integrations, or when checking a login flow is safe against the OWASP Top Ten. Use when building any feature that accepts untrusted data, manages user sessions, or interacts with third-party services. Use when auditing dependencies for known vulnerabilities, triaging package-manager audit findings, or assessing supply-chain risk in a new package. Use when personal data or privacy compliance (GDPR, CCPA) is involved.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/shipping-and-launch",
+        "name": "shipping-and-launch",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/shipping-and-launch/SKILL.md",
+        "description": "Prepares production launches. Use when preparing to deploy to production, or when asking what needs to be in place before shipping. Use when you need a pre-launch checklist, when setting up monitoring, when planning a staged rollout, or when you need a rollback strategy.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/source-driven-development",
+        "name": "source-driven-development",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/source-driven-development/SKILL.md",
+        "description": "Grounds every implementation decision in official documentation. Use when you want to verify an approach against the official docs before implementing it, or when you want authoritative, source-cited code free from outdated patterns. Use when building with any framework or library where correctness matters.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/spec-driven-development",
+        "name": "spec-driven-development",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/spec-driven-development/SKILL.md",
+        "description": "Creates specs before coding. Use when starting a new project, feature, or significant change and no specification exists yet. Use when drafting a PRD or requirements document with objectives and scope, or when requirements are unclear, ambiguous, or only exist as a vague idea. Use when a single requirement spans several independently testable capabilities and needs decomposing into a capability map of modules before specifying.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/test-driven-development",
+        "name": "test-driven-development",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/test-driven-development/SKILL.md",
+        "description": "Drives development with tests using the red-green-refactor loop. Use when implementing any logic, fixing any bug, or changing any behavior. Use when you need to prove that code works, when a bug report arrives, or when you're about to modify existing functionality. Use when asked to add tests to a function, fix a bug in it or change its behavior, even when the code is pasted inline and the request does not mention tests.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/using-agent-skills",
+        "name": "using-agent-skills",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/using-agent-skills/SKILL.md",
+        "description": "Discovers and invokes agent skills. Use when starting a session, or when you need to decide which skill or workflow applies to the piece of work at hand. This is the meta-skill that governs how all other skills are discovered and invoked.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "coding-workflow/writing-for-agents",
+        "name": "writing-for-agents",
+        "category": "coding-workflow",
+        "path": "skills/coding-workflow/writing-for-agents/SKILL.md",
+        "description": "Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "design-and-art/impeccable",
+        "name": "impeccable",
+        "category": "design-and-art",
+        "path": "skills/design-and-art/impeccable/SKILL.md",
+        "description": "Use when the user wants to design, redesign, shape, critique, audit, polish, clarify, distill, harden, optimize, adapt, animate, colorize, extract, or otherwise improve a frontend interface. Covers websites, landing pages, dashboards, product UI, app shells, components, forms, settings, onboarding, and empty states. Handles UX review, visual hierarchy, information architecture, cognitive load, accessibility, performance, responsive behavior, theming, anti-patterns, typography, fonts, spacing, layout, alignment, color, motion, micro-interactions, UX copy, error states, edge cases, i18n, and reusable design systems or tokens. Also use for bland designs that need to become bolder or more delightful, loud designs that should become quieter, live browser iteration on UI elements, or ambitious visual effects that should feel technically extraordinary. Not for backend-only or non-UI tasks.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "design-and-art/krita-iterate",
+        "name": "krita-iterate",
+        "category": "design-and-art",
+        "path": "skills/design-and-art/krita-iterate/SKILL.md",
+        "description": "Draw or improve a fox on a bicycle in Krita through reference study, editable objects, numbered versions and a final progression review. Use for the fox-bike illustration workflow, not plugin installation or compatibility debugging.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "design-and-art/krita-layer-rebuild",
+        "name": "krita-layer-rebuild",
+        "category": "design-and-art",
+        "path": "skills/design-and-art/krita-layer-rebuild/SKILL.md",
+        "description": "Recreate a reference image 1:1 in editable Krita layers using native drawing and painting and visual comparison. Use for reconstruction of illustrations, painterly scenes, posters or photographs, tutorial reproduction and requested style transfer.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "design-and-art/mobile-app-ui-design",
+        "name": "mobile-app-ui-design",
+        "category": "design-and-art",
+        "path": "skills/design-and-art/mobile-app-ui-design/SKILL.md",
+        "description": "Design and improve mobile app screens, navigation, onboarding, and interactive prototypes. Use for mobile UI/UX work, including React Native, Flutter, SwiftUI, and mobile web interfaces.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "engineering/civil-engineer",
+        "name": "civil-engineer",
+        "category": "engineering",
+        "path": "skills/engineering/civil-engineer/SKILL.md",
+        "description": "Expert civil and structural engineer with global standards coverage — Eurocode, DIN, ACI, AISC, ASCE, AS/NZS, CSA, GB, IS, AIJ, and more. Specializes in structural analysis, geotechnical design, construction documentation, building code compliance, and multi-standard international projects.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "finance/okx-cex-portfolio",
+        "name": "okx-cex-portfolio",
+        "category": "finance",
+        "path": "skills/finance/okx-cex-portfolio/SKILL.md",
+        "description": "This skill should be used when the user asks about 'account balance', 'how much USDT do I have', 'my funding account', 'show my positions', 'open positions', 'position P&L', 'unrealized PnL', 'closed positions', 'position history', 'realized PnL', 'account bills', 'transaction history', 'trading fees', 'fee tier', 'account config', 'max order size', 'how much can I buy', 'withdrawable amount', 'transfer funds', 'move USDT to trading account', or 'switch position mode'. Also use for '总资产', 'full balance', 'all assets', 'total holdings', 'net worth', 'how much do I have in total', 'show all my balances', 'all account balances', 'asset overview', 'aggregated balance', 'asset snapshot', '资产快照'. Requires API credentials. Do NOT use for market prices (use okx-cex-market), placing/cancelling orders (use okx-cex-trade), or grid/DCA bots (use okx-cex-bot).",
+        "routing_metadata": {}
+      },
+      {
+        "id": "finance/okx-dex-market",
+        "name": "okx-dex-market",
+        "category": "finance",
+        "path": "skills/finance/okx-dex-market/SKILL.md",
+        "description": "Query read-only DEX token, market, signal, social, trenches, and WebSocket data. Use for token search, rankings, liquidity, holders, risk metadata, clusters, and trades; prices, K-lines/OHLC, indexes, and wallet PnL; smart-money/KOL/whale signals; news, sentiment, and token vibe; meme-launch, developer, bundle/sniper, and co-investor research; or DEX WebSocket clients. Triggers include hot tokens, holder concentration, smart money, top-trader leaderboards, pump.fun research, new token launches, on-chain token scanning, bundled or sniper activity, and WebSocket.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "game-design/game-design-core",
+        "name": "game-design-core",
+        "category": "game-design",
+        "path": "skills/game-design/game-design-core/SKILL.md",
+        "description": "The foundational theory of interactive experience design - loops, motivation, feel, and the art of meaningful playUse when \"game design, core loop, game feel, player motivation, game mechanics, meaningful choice, progression system, game economy, game balance, playtesting, GDD, game document, fun factor, engagement, flow state, risk reward, player agency, juice, game polish, 8 kinds of fun, bartle types, MDA framework, game-design, player-experience, core-loop, motivation, game-feel, MDA, playtesting, GDD, systems-thinking, player-psychology, engagement, flow-state\" mentioned.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "game-design/game-design-document",
+        "name": "game-design-document",
+        "category": "game-design",
+        "path": "skills/game-design/game-design-document/SKILL.md",
+        "description": "Generates professional, publisher-grade Game Design Documents (GDD) as polished .docx and .pdf files. Turns a game concept into a comprehensive 40-80 page document covering core gameplay loop, mechanics, UX flows, art direction, monetization strategy, technical requirements, and competitive analysis. Also generates companion pitch decks (.pptx) and one-page pitches. Use when users want to create a GDD, game pitch, game concept document, or game design specification.\n",
+        "routing_metadata": {}
+      },
+      {
+        "id": "game-design/game-designer",
+        "name": "game-designer",
+        "category": "game-design",
+        "path": "skills/game-design/game-designer/SKILL.md",
+        "description": "Systems and mechanics architect - Masters GDD authorship, player psychology, economy balancing, and gameplay loop design across all engines and genres",
+        "routing_metadata": {}
+      },
+      {
+        "id": "game-design/game-ui-design",
+        "name": "game-ui-design",
+        "category": "game-design",
+        "path": "skills/game-design/game-ui-design/SKILL.md",
+        "description": "Design and review game HUDs, menus, inventory, minimaps, reticles, and input prompts. Use for readable game interfaces, controller focus, safe zones, and accessible cross-platform game UI.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "game-design/level-designer",
+        "name": "level-designer",
+        "category": "game-design",
+        "path": "skills/game-design/level-designer/SKILL.md",
+        "description": "Spatial storytelling and flow specialist - Masters layout theory, pacing architecture, encounter design, and environmental narrative across all game engines",
+        "routing_metadata": {}
+      },
+      {
+        "id": "game-design/pixel-art-sprites",
+        "name": "pixel-art-sprites",
+        "category": "game-design",
+        "path": "skills/game-design/pixel-art-sprites/SKILL.md",
+        "description": "Specialist in pixel art creation, sprite animation, and limited palette designUse when \"pixel art, sprites, sprite sheet, sprite animation, retro game art, 8-bit, 16-bit, character sprites, tile art, pixel animation, aseprite, pixel-art, sprites, animation, game-art, retro, indie-games, 2d-graphics, sprite-sheets\" mentioned.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "game-development/day-one-patch",
+        "name": "day-one-patch",
+        "category": "game-development",
+        "path": "skills/game-development/day-one-patch/SKILL.md",
+        "description": "Day-one launch patch — focused fix for known issues found after gold master. Mini-sprint with QA gate and rollback.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "game-development/game-architecture",
+        "name": "game-architecture",
+        "category": "game-development",
+        "path": "skills/game-development/game-architecture/SKILL.md",
+        "description": "Game architecture patterns and best practices for browser games. Use when designing game systems, planning architecture, structuring a game project, or making architectural decisions about game code.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "game-development/game-development",
+        "name": "game-development",
+        "category": "game-development",
+        "path": "skills/game-development/game-development/SKILL.md",
+        "description": "Game development orchestrator. Routes by platform, dimension, and engine fit (web 2D/3D, hybrid DOM+canvas, narrative tools). Use when starting or structuring a game project, choosing frameworks, or picking among Phaser, PixiJS, Kaplay, Canvas/WebGL, Three.js, Babylon.js, Godot, Unity, or Ink/Twine.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "game-development/map-systems",
+        "name": "map-systems",
+        "category": "game-development",
+        "path": "skills/game-development/map-systems/SKILL.md",
+        "description": "Decompose a concept into individual systems, map dependencies, prioritize design order, create the systems index.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "game-development/unity-developer",
+        "name": "unity-developer",
+        "category": "game-development",
+        "path": "skills/game-development/unity-developer/SKILL.md",
+        "description": "Build, debug, and optimize Unity gameplay, rendering, assets, UI, and platform builds. Use for Unity C# development and Unity-specific performance or deployment work.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "game-development/unity-ecs-patterns",
+        "name": "unity-ecs-patterns",
+        "category": "game-development",
+        "path": "skills/game-development/unity-ecs-patterns/SKILL.md",
+        "description": "Implement and review Unity ECS/DOTS components, systems, baking, queries, command buffers, Jobs, and Burst. Use for data-oriented Unity code and measured entity-processing bottlenecks.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "marketing-and-ads/arcads-ads",
+        "name": "arcads-ads",
+        "category": "marketing-and-ads",
+        "path": "skills/marketing-and-ads/arcads-ads/SKILL.md",
+        "description": "Plan and create Arcads ad creatives from a marketing goal, brand research, and product facts. Use for Arcads campaigns, UGC ads, hook variants, and ad localization.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "marketing-and-ads/arcads-amazon-listing-system",
+        "name": "arcads-amazon-listing-system",
+        "category": "marketing-and-ads",
+        "path": "skills/marketing-and-ads/arcads-amazon-listing-system/SKILL.md",
+        "description": "Plan and generate Amazon listing image sets from a product URL and photo using Arcads. Use for product benefits, features, lifestyle, and genuine review graphics.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "marketing-and-ads/arcads-animated-ad",
+        "name": "arcads-animated-ad",
+        "category": "marketing-and-ads",
+        "path": "skills/marketing-and-ads/arcads-animated-ad/SKILL.md",
+        "description": "Design paper-collage animated ads with voiceover scripts, timed clips, and Arcads Seedance prompts. Use for Vox-style explainers and collage motion ad briefs.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "marketing-and-ads/arcads-cinematic-ads",
+        "name": "arcads-cinematic-ads",
+        "category": "marketing-and-ads",
+        "path": "skills/marketing-and-ads/arcads-cinematic-ads/SKILL.md",
+        "description": "Develop cinematic e-commerce product films with Arcads, including scripts, casting sheets, locations, linked shots, and assembly. Use for story-driven film-look ads.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "marketing-and-ads/arcads-clone-hook",
+        "name": "arcads-clone-hook",
+        "category": "marketing-and-ads",
+        "path": "skills/marketing-and-ads/arcads-clone-hook/SKILL.md",
+        "description": "Analyze a reference video ad opening and adapt its hook to the user's product through Arcads. Use for hook breakdowns, brand swaps, and rebuilt opening sequences.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "marketing-and-ads/arcads-clone-static-ad",
+        "name": "arcads-clone-static-ad",
+        "category": "marketing-and-ads",
+        "path": "skills/marketing-and-ads/arcads-clone-static-ad/SKILL.md",
+        "description": "Adapt a reference static ad to the user's brand with Arcads, preserving visual hierarchy while replacing product imagery and copy. Use for static ad recreation.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "marketing-and-ads/arcads-collage-motion",
+        "name": "arcads-collage-motion",
+        "category": "marketing-and-ads",
+        "path": "skills/marketing-and-ads/arcads-collage-motion/SKILL.md",
+        "description": "Decode halftone and paper-collage references into editable visual specs, then generate and animate on-brand creatives with Arcads. Use for collage assemble-in motion.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "marketing-and-ads/arcads-fpv-drone-path",
+        "name": "arcads-fpv-drone-path",
+        "category": "marketing-and-ads",
+        "path": "skills/marketing-and-ads/arcads-fpv-drone-path/SKILL.md",
+        "description": "Write an FPV drone flythrough prompt from a landmark image and a drawn flight path. Use for continuous first-person camera routes and landmark world-tour shots.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "marketing-and-ads/arcads-image-to-motion",
+        "name": "arcads-image-to-motion",
+        "category": "marketing-and-ads",
+        "path": "skills/marketing-and-ads/arcads-image-to-motion/SKILL.md",
+        "description": "Direct motion graphics from still images with Arcads Seedance. Use for animating UI, product art, collages, characters, and key art while preserving text and frozen regions.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "marketing-and-ads/arcads-media-router",
+        "name": "arcads-media-router",
+        "category": "marketing-and-ads",
+        "path": "skills/marketing-and-ads/arcads-media-router/SKILL.md",
+        "description": "Route an explicitly chosen Arcads media generation or editing request to its live MCP tools. Use for Arcads image, video, captioning, voice, translation, and enhancement operations.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "marketing-and-ads/arcads-omniflash-restyle",
+        "name": "arcads-omniflash-restyle",
+        "category": "marketing-and-ads",
+        "path": "skills/marketing-and-ads/arcads-omniflash-restyle/SKILL.md",
+        "description": "Restyle talking-head footage with Arcads Omni Flash using a reference edit and script. Use for matching typography, backgrounds, cuts, and overlays while preserving identity and source voice.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "marketing-and-ads/arcads-pixar-ad",
+        "name": "arcads-pixar-ad",
+        "category": "marketing-and-ads",
+        "path": "skills/marketing-and-ads/arcads-pixar-ad/SKILL.md",
+        "description": "Create stylized 3D animated product ads through Arcads with researched product facts, character sheets, keyframes, narration, and dialogue. Use for animated-film or Pixar-style ad briefs.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "marketing-and-ads/arcads-spy-competitor-ads",
+        "name": "arcads-spy-competitor-ads",
+        "category": "marketing-and-ads",
+        "path": "skills/marketing-and-ads/arcads-spy-competitor-ads/SKILL.md",
+        "description": "Find and download competitor video or image ads from the public Meta Ad Library with a connected browser. Use for competitor creative research and swipe files.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "marketing-and-ads/arcads-static-to-motion",
+        "name": "arcads-static-to-motion",
+        "category": "marketing-and-ads",
+        "path": "skills/marketing-and-ads/arcads-static-to-motion/SKILL.md",
+        "description": "Turn a finished static ad into a short Arcads video using restrained motion or one creative transformation. Use for animated product statics, offer cards, and paid social clips.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "marketing-and-ads/arcads-tsunami-soundstage",
+        "name": "arcads-tsunami-soundstage",
+        "category": "marketing-and-ads",
+        "path": "skills/marketing-and-ads/arcads-tsunami-soundstage/SKILL.md",
+        "description": "Write the miniature-flood soundstage video prompt with practical-effects staging, camera, water physics, and crew blocking. Use for the tsunami-on-a-film-set format.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "marketing-and-ads/arcads-viral-clone",
+        "name": "arcads-viral-clone",
+        "category": "marketing-and-ads",
+        "path": "skills/marketing-and-ads/arcads-viral-clone/SKILL.md",
+        "description": "Adapt a reference viral video ad to the user's product with Arcads and FFmpeg, preserving shots and pacing while checking product identity, timing, and source audio.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "personal-workflow/1f3d9-citylife",
+        "name": "1f3d9-citylife",
+        "category": "personal-workflow",
+        "path": "skills/personal-workflow/1f3d9-citylife/SKILL.md",
+        "description": "Configure and visit 1F3D9, the persistent city for AI agents. Use when the user says 'Configure 1F3D9', asks the agent to move in, choose a city name, walk, look, build, set permissions or laws, make, use, upgrade, or withdraw things, talk, make agreements or deals, give or sell property, trade a city thing through 1F3EA's world aisle, flag content, or spend approved free time in the city.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "personal-workflow/explain-yourself",
+        "name": "explain-yourself",
+        "category": "personal-workflow",
+        "path": "skills/personal-workflow/explain-yourself/SKILL.md",
+        "description": "Show and explain actual agent work when the user asks what you did, cannot understand a progress report, or wants evidence behind claims. Connect concrete changes and results to plain-language explanations.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "personal-workflow/grill-me",
+        "name": "grill-me",
+        "category": "personal-workflow",
+        "path": "skills/personal-workflow/grill-me/SKILL.md",
+        "description": "A relentless interview to sharpen a plan or design.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "personal-workflow/grilling",
+        "name": "grilling",
+        "category": "personal-workflow",
+        "path": "skills/personal-workflow/grilling/SKILL.md",
+        "description": "Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "personal-workflow/handoff",
+        "name": "handoff",
+        "category": "personal-workflow",
+        "path": "skills/personal-workflow/handoff/SKILL.md",
+        "description": "Compact the current conversation into a handoff document for another agent to pick up.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "personal-workflow/roll-the-dice",
+        "name": "roll-the-dice",
+        "category": "personal-workflow",
+        "path": "skills/personal-workflow/roll-the-dice/SKILL.md",
+        "description": "Break a delegated decision deadlock by randomly choosing a viable path and carrying it through to completion. Use when the user invokes Roll the dice, asks for a coin flip between acceptable options, or explicitly delegates a choice to chance. Follow existing decisions normally unless the user asks to reopen them.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "personal-workflow/teach",
+        "name": "teach",
+        "category": "personal-workflow",
+        "path": "skills/personal-workflow/teach/SKILL.md",
+        "description": "Teach the user a new skill or concept, within this workspace.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "personal-workflow/to-questionnaire",
+        "name": "to-questionnaire",
+        "category": "personal-workflow",
+        "path": "skills/personal-workflow/to-questionnaire/SKILL.md",
+        "description": "Turn a decision you can't fully answer into a questionnaire for someone else to fill in.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "personal-workflow/wait-what",
+        "name": "wait-what",
+        "category": "personal-workflow",
+        "path": "skills/personal-workflow/wait-what/SKILL.md",
+        "description": "Stop. That last message did not land: re-pitch it.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "planning/brainstorming",
+        "name": "brainstorming",
+        "category": "planning",
+        "path": "skills/planning/brainstorming/SKILL.md",
+        "description": "Turn an unclear idea into a concrete design through a focused conversation, with ADHD-friendly idea capture and optional mind maps. Use when the user asks to brainstorm, explore an idea, compare directions, or clarify a project before building. Clear tasks and already-approved plans can proceed directly.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "planning/managing-timelines",
+        "name": "managing-timelines",
+        "category": "planning",
+        "path": "skills/planning/managing-timelines/SKILL.md",
+        "description": "Help users set and hit realistic deadlines. Use when someone is planning project timelines, struggling to hit deadlines, dealing with timeline pressure from stakeholders, or trying to improve estimation accuracy.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "programming/lua",
+        "name": "lua",
+        "category": "programming",
+        "path": "skills/programming/lua/SKILL.md",
+        "description": "Lua development guidelines covering tables, metatables, error handling, game development, and performance optimization.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "reverse-engineering/reverse-engineer-anything",
+        "name": "reverse-engineer-anything",
+        "category": "reverse-engineering",
+        "path": "skills/reverse-engineering/reverse-engineer-anything/SKILL.md",
+        "description": "Reverse engineer native, managed, Electron/JavaScript, packaged, firmware, and browser targets with REA. Use shipped-artifact or requested runtime evidence to explain features, compare versions, decompile code, or guide a reconstruction. Skip REA for ordinary source-repository architecture analysis.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "reverse-engineering/reverse-engineering-tools",
+        "name": "reverse-engineering-tools",
+        "category": "reverse-engineering",
+        "path": "skills/reverse-engineering/reverse-engineering-tools/SKILL.md",
+        "description": "Analyze supplied game binaries, protection components, drivers, dumps, or traces through reproducible disassembly, decompilation, debugging, diffing, and interface reconstruction.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "reverse-engineering/reverse-skill-router",
+        "name": "reverse-skill-router",
+        "category": "reverse-engineering",
+        "path": "skills/reverse-engineering/reverse-skill-router/SKILL.md",
+        "description": "Use the reverse-skill repository from Codex for authorized reverse engineering, security analysis, CTF, and defensive testing tasks. Requires the reverse-skill repository to be available as the current workspace or an explicitly supplied local path.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "review-and-resilience/adversarial-review",
+        "name": "adversarial-review",
+        "category": "review-and-resilience",
+        "path": "skills/review-and-resilience/adversarial-review/SKILL.md",
+        "description": "Adversarial code review using cross-model approach. Spawns reviewers on the opposing model (Claude uses Codex, Codex uses Claude) to challenge work from distinct critical lenses. Produces a synthesized verdict with findings and lead judgment. Triggers: \"adversarial review\".",
+        "routing_metadata": {}
+      },
+      {
+        "id": "review-and-resilience/chaos-engineer",
+        "name": "chaos-engineer",
+        "category": "review-and-resilience",
+        "path": "skills/review-and-resilience/chaos-engineer/SKILL.md",
+        "description": "Designs chaos experiments, creates failure injection frameworks, and facilitates game day exercises for distributed systems — producing runbooks, experiment manifests, rollback procedures, and post-mortem templates. Use when designing chaos experiments, implementing failure injection frameworks, or conducting game day exercises. Invoke for chaos experiments, resilience testing, blast radius control, game days, antifragile systems, fault injection, Chaos Monkey, Litmus Chaos.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "sports/sports-betting-analyzer",
+        "name": "sports-betting-analyzer",
+        "category": "sports",
+        "path": "skills/sports/sports-betting-analyzer/SKILL.md",
+        "description": "Analyze spreads, over/unders, prop bets. Historical trends, situational stats, value bet identification. For entertainment/education only.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "unreal-engine/uefn-toolbelt",
+        "name": "uefn-toolbelt",
+        "category": "unreal-engine",
+        "path": "skills/unreal-engine/uefn-toolbelt/SKILL.md",
+        "description": "Inspect and automate Unreal Editor for Fortnite with the globally installed UEFN Toolbelt MCP server. Use for UEFN actors, assets, devices, imports, level inspection, Toolbelt setup, and choosing existing editor tools.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "unreal-engine/unreal-engine",
+        "name": "unreal-engine",
+        "category": "unreal-engine",
+        "path": "skills/unreal-engine/unreal-engine/SKILL.md",
+        "description": "Comprehensive Unreal Engine C++ and Blueprint development assistant with deep project structure understanding. Use when helping with Unreal Engine projects, including: C++ gameplay programming, Blueprint development, input system configuration (Enhanced Input), Gameplay Ability System (GAS), project structure navigation, asset discovery and referencing, plugin integration (experimental/beta), API lookups for underdocumented features, and debugging. Triggers on any Unreal Engine development question, especially when working within a .uproject directory.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "unreal-engine/unreal-engine-cpp-pro",
+        "name": "unreal-engine-cpp-pro",
+        "category": "unreal-engine",
+        "path": "skills/unreal-engine/unreal-engine-cpp-pro/SKILL.md",
+        "description": "Expert guide for Unreal Engine 5.x C++ development, covering UObject hygiene, performance patterns, and best practices.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "unreal-engine/unreal-multiplayer-architect",
+        "name": "unreal-multiplayer-architect",
+        "category": "unreal-engine",
+        "path": "skills/unreal-engine/unreal-multiplayer-architect/SKILL.md",
+        "description": "Unreal Engine networking specialist - Masters Actor replication, GameMode/GameState architecture, server-authoritative gameplay, network prediction, and dedicated server setup for UE5",
+        "routing_metadata": {}
+      },
+      {
+        "id": "unreal-engine/unreal-systems-engineer",
+        "name": "unreal-systems-engineer",
+        "category": "unreal-engine",
+        "path": "skills/unreal-engine/unreal-systems-engineer/SKILL.md",
+        "description": "Performance and hybrid architecture specialist - Masters C++/Blueprint continuum, Nanite geometry, Lumen GI, and Gameplay Ability System for AAA-grade Unreal Engine projects",
+        "routing_metadata": {}
+      },
+      {
+        "id": "unreal-engine/unreal-technical-artist",
+        "name": "unreal-technical-artist",
+        "category": "unreal-engine",
+        "path": "skills/unreal-engine/unreal-technical-artist/SKILL.md",
+        "description": "Unreal Engine visual pipeline specialist - Masters the Material Editor, Niagara VFX, Procedural Content Generation, and the art-to-engine pipeline for UE5 projects",
+        "routing_metadata": {}
+      },
+      {
+        "id": "unreal-engine/unreal-world-builder",
+        "name": "unreal-world-builder",
+        "category": "unreal-engine",
+        "path": "skills/unreal-engine/unreal-world-builder/SKILL.md",
+        "description": "Open-world and environment specialist - Masters UE5 World Partition, Landscape, procedural foliage, HLOD, and large-scale level streaming for seamless open-world experiences",
+        "routing_metadata": {}
+      },
+      {
+        "id": "video-and-audio/ai-video-generation",
+        "name": "ai-video-generation",
+        "category": "video-and-audio",
+        "path": "skills/video-and-audio/ai-video-generation/SKILL.md",
+        "description": "Generate or transform videos through inference.sh using its belt CLI, including text-to-video, image animation, reference-based clips, lipsync, and upscaling. Use when the user requests AI video generation or names an inference.sh video model.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "video-and-audio/seedance-2-0-prompter",
+        "name": "seedance-2-0-prompter",
+        "category": "video-and-audio",
+        "path": "skills/video-and-audio/seedance-2-0-prompter/SKILL.md",
+        "description": "Design Seedance 2.0 video prompts from a creative brief and image, video, or audio references. Use for multimodal prompt construction and asset-role mapping before generation.",
+        "routing_metadata": {}
+      },
+      {
+        "id": "video-and-audio/video-editing",
+        "name": "video-editing",
+        "category": "video-and-audio",
+        "path": "skills/video-and-audio/video-editing/SKILL.md",
+        "description": "Edit existing video footage with cuts, ordered segments, captions, overlays, audio cleanup, and reframing. Use for vlogs, demos, tutorials, and clips made from real recordings.",
+        "routing_metadata": {}
+      }
+    ]
+  },
+  "index_sha256": "6318eedd7422f8f7c496674129c1f3cc732429152e0ce5d164245c50c53e135e"
+}

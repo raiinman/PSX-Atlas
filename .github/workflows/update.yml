@@ -1,0 +1,108 @@
+name: Daily Atlas update
+on:
+  schedule:
+    - cron: '23 14 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Rebuild even when source is unchanged
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: atlas-update
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    outputs:
+      needed: ${{ steps.check.outputs.needed }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: node scripts/test-updater.mjs
+      - id: check
+        run: node scripts/check-update.mjs
+        env:
+          ATLAS_FORCE: ${{ inputs.force || 'false' }}
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        if: steps.check.outputs.needed == 'true'
+        with:
+          python-version: '3.12'
+      - if: steps.check.outputs.needed == 'true'
+        run: |
+          python -m pip install -r requirements-upstream.txt
+          npx playwright install --with-deps chromium
+      - if: steps.check.outputs.needed == 'true'
+        run: node scripts/update.mjs --stage-only
+        env:
+          ATLAS_UPSTREAM_SHA: ${{ steps.check.outputs.sha }}
+          ATLAS_BASELINE: ${{ steps.check.outputs.baseline }}
+          ATLAS_PYTHON: python
+      - if: steps.check.outputs.needed == 'true'
+        run: node scripts/collect-update.mjs
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        if: steps.check.outputs.needed == 'true'
+        with:
+          name: verified-atlas
+          path: _release/
+          if-no-files-found: error
+          retention-days: 30
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        if: failure()
+        with:
+          name: update-diagnostics
+          path: |
+            _updates/last-attempt.json
+            _updates/*/evidence/*.json
+            _updates/*/update-review.*
+          if-no-files-found: ignore
+  publish:
+    needs: build
+    if: needs.build.outputs.needed == 'true'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+        with:
+          node-version: '24'
+      - run: npm ci --ignore-scripts
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+        with:
+          name: verified-atlas
+          path: _release/
+      - run: node scripts/publish-release.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+  report-failure:
+    needs: [build, publish]
+    if: failure()
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+        with:
+          node-version: '24'
+      - run: node scripts/report-update-failure.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}

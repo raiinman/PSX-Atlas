@@ -1,0 +1,44 @@
+{
+  "note": "This is a source-linked navigation model, not a cycle-accurate hardware simulation. The complete reference preserves qualifications and hardware variants.",
+  "nodes": [
+    {"id":"cpu","label":"CPU","detail":"Instructions, cache and exceptions","page":"ps1/cpu/cpuspecifications/","x":360,"y":45},
+    {"id":"gte","label":"GTE","detail":"Geometry coprocessor","page":"ps1/cpu/gte/geometrytransformationenginegte/","x":660,"y":45},
+    {"id":"ram","label":"Main RAM","detail":"2 MiB · CPU address space","page":"ps1/system/memorymap/","x":60,"y":180},
+    {"id":"dma","label":"DMA","detail":"7 channels · memory transfers","page":"ps1/system/dmachannels/","x":360,"y":180},
+    {"id":"irq","label":"Interrupts","detail":"I_STAT / I_MASK → CPU","page":"ps1/system/interrupts/","x":660,"y":180},
+    {"id":"mdec","label":"MDEC","detail":"Compressed image decoding","page":"ps1/cpu/mdec/macroblockdecodermdec/","x":60,"y":315},
+    {"id":"gpu","label":"GPU","detail":"Commands, rasterization, display","page":"ps1/gpu/","x":360,"y":315},
+    {"id":"spu","label":"SPU","detail":"Voices, mixing and reverb","page":"ps1/spu/soundprocessingunitspu/","x":660,"y":315},
+    {"id":"cdrom","label":"CD-ROM","detail":"Disc commands and sector data","page":"ps1/cdr/cdromdrive/","x":60,"y":450},
+    {"id":"vram","label":"VRAM","detail":"1 MiB · GPU-local memory","page":"ps1/gpu/video-memory-vram/","x":360,"y":450},
+    {"id":"soundram","label":"Sound RAM","detail":"512 KiB · SPU-local memory","page":"ps1/spu/soundprocessingunitspu/","x":660,"y":450},
+    {"id":"bios","label":"BIOS","detail":"Boot ROM and kernel services","page":"ps1/kernelbios/","x":60,"y":585},
+    {"id":"sio","label":"Serial I/O","detail":"Controllers and memory cards","page":"ps1/sio/serialinterfacessio/","x":360,"y":585},
+    {"id":"timers","label":"Timers","detail":"Counters and timing sources","page":"ps1/system/timers/","x":660,"y":585}
+  ],
+  "edges": [
+    {"from":"cpu","to":"ram","direction":"both","label":"CPU memory access","source":"ps1/system/memorymap/"},
+    {"from":"cpu","to":"gte","label":"COP2 instructions","source":"ps1/cpu/gte/geometrytransformationenginegte/"},
+    {"from":"ram","to":"dma","direction":"both","label":"Main-memory transfers","source":"ps1/system/dmachannels/"},
+    {"from":"dma","to":"mdec","direction":"both","label":"DMA0 input / DMA1 output","source":"ps1/system/dmachannels/#dma-register-summary"},
+    {"from":"dma","to":"gpu","direction":"both","label":"DMA2 commands + image data","source":"ps1/system/dmachannels/#dma-register-summary"},
+    {"from":"cdrom","to":"dma","label":"DMA3 sector data → RAM","source":"ps1/system/dmachannels/#dma-register-summary"},
+    {"from":"dma","to":"spu","direction":"both","label":"DMA4 sound transfers","source":"ps1/system/dmachannels/#dma-register-summary"},
+    {"from":"gpu","to":"vram","direction":"both","label":"Framebuffer / textures / palettes","source":"ps1/gpu/video-memory-vram/"},
+    {"from":"spu","to":"soundram","direction":"both","label":"Samples / capture / reverb","source":"ps1/spu/soundprocessingunitspu/"},
+    {"from":"irq","to":"cpu","label":"Masked interrupt → CPU exception","source":"ps1/system/interrupts/"},
+    {"from":"gpu","to":"irq","label":"VBLANK and GPU IRQ sources","source":"ps1/system/interrupts/"},
+    {"from":"cdrom","to":"irq","label":"CD-ROM interrupt source","source":"ps1/system/interrupts/"},
+    {"from":"spu","to":"irq","label":"SPU interrupt source","source":"ps1/system/interrupts/"},
+    {"from":"dma","to":"irq","label":"DMA interrupt source","source":"ps1/system/interrupts/"},
+    {"from":"sio","to":"irq","label":"Serial interrupt sources","source":"ps1/system/interrupts/"},
+    {"from":"timers","to":"irq","label":"Timer interrupt sources","source":"ps1/system/interrupts/"},
+    {"from":"cpu","to":"bios","label":"ROM and kernel entry points","source":"ps1/kernelbios/"}
+  ],
+  "journeys": [
+    {"id":"graphics","title":"From geometry to pixels","description":"Follow computation, command submission, rasterization, and display storage. These are conceptual stages; software can use other paths.","steps":[["cpu","Run game logic and prepare data"],["gte","Transform geometry with COP2"],["ram","Store GPU command lists in RAM"],["dma","Submit commands through DMA2"],["gpu","Process rendering commands"],["vram","Store textures and framebuffers"]]},
+    {"id":"disc","title":"From disc to main memory","description":"Trace the CD-ROM data path, then examine completion handling.","steps":[["cpu","Issue CD-ROM commands via I/O registers"],["cdrom","Read sector data"],["dma","Transfer sector data with DMA3"],["ram","Receive data in main RAM"],["irq","Inspect CD-ROM and DMA interrupt handling"]]},
+    {"id":"audio","title":"From samples to sound","description":"Explore sound data transfer, local storage, and voice processing.","steps":[["ram","Prepare sample data"],["dma","Transfer sound data with DMA4"],["soundram","Store samples in SPU memory"],["spu","Decode, mix voices and apply reverb"]]},
+    {"id":"boot","title":"Build the system mental model","description":"A reading route through address spaces, CPU behavior, interrupts and DMA before the peripherals.","steps":[["ram","Understand CPU-mapped and device-local memory"],["cpu","Inspect execution and cache behavior"],["bios","Find boot and kernel services"],["irq","Follow interrupt delivery"],["dma","Learn peripheral memory transfers"],["timers","Explore timing sources and counters"]]}
+  ]
+}

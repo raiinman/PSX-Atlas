@@ -1,0 +1,4 @@
+{
+  "note": "Explicit human acceptance only. Map edge IDs from update-review.json to reviewed evidence hashes; the updater must never fill this automatically.",
+  "edges": {}
+}

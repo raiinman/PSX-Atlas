@@ -1,0 +1,32 @@
+{
+  "name": "ps1-research",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "capture": "node scripts/capture.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/verify.mjs",
+    "start": "node scripts/serve.mjs",
+    "test:agent": "node scripts/verify-agent.mjs",
+    "benchmark": "node scripts/benchmark.mjs",
+    "package": "node scripts/package.mjs",
+    "update": "node scripts/update.mjs",
+    "test:updater": "node scripts/test-updater.mjs",
+    "install:update": "node scripts/install-update.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "minisearch": "^7.2.0",
+    "playwright": "^1.64.1"
+  },
+  "private": true,
+  "devDependencies": {
+    "axe-core": "^4.14.0",
+    "fflate": "^0.8.3"
+  }
+}

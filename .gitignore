@@ -1,0 +1,17 @@
+node_modules/
+upstream/
+archive/
+offline/
+PSX-Atlas-Offline.zip
+evidence/*.png
+_updates/
+_backups/
+_maintenance/
+.venv-updater/
+.tools/
+sample.html
+rea-scenarios-guide.txt
+evidence/rea-*.json
+
+_release/
+state/local-install.json*

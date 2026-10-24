@@ -1,0 +1,81 @@
+{
+  "conditions": "3 fresh Chrome contexts, file://, networking disabled, same host. Command timing includes Node startup. Local synthetic measurements, not a guarantee for other devices.",
+  "before": [
+    {
+      "load_ms": 329,
+      "first_search_ms": 1782,
+      "initial_js_bytes": 15610369
+    },
+    {
+      "load_ms": 352,
+      "first_search_ms": 1566,
+      "initial_js_bytes": 15610369
+    },
+    {
+      "load_ms": 317,
+      "first_search_ms": 1957,
+      "initial_js_bytes": 15610369
+    }
+  ],
+  "after": [
+    {
+      "load_ms": 61,
+      "first_search_ms": 898,
+      "initial_js_bytes": 43147
+    },
+    {
+      "load_ms": 248,
+      "first_search_ms": 416,
+      "initial_js_bytes": 43147
+    },
+    {
+      "load_ms": 225,
+      "first_search_ms": 448,
+      "initial_js_bytes": 43147
+    }
+  ],
+  "agent": [
+    {
+      "query": "DMA2",
+      "process_ms": 98,
+      "lookup_ms": 4.33,
+      "entities": 1,
+      "hits": 6
+    },
+    {
+      "query": "where does DMA3 go",
+      "process_ms": 92,
+      "lookup_ms": 3.28,
+      "entities": 1,
+      "hits": 6
+    },
+    {
+      "query": "1F801810h",
+      "process_ms": 92,
+      "lookup_ms": 3.13,
+      "entities": 1,
+      "hits": 0
+    },
+    {
+      "query": "texture cache",
+      "process_ms": 93,
+      "lookup_ms": 3.08,
+      "entities": 0,
+      "hits": 6
+    },
+    {
+      "query": "GPU bus bridge",
+      "process_ms": 87,
+      "lookup_ms": 2.87,
+      "entities": 1,
+      "hits": 1
+    }
+  ],
+  "median": {
+    "before_load_ms": 329,
+    "after_load_ms": 225,
+    "before_search_ms": 1782,
+    "after_search_ms": 448
+  },
+  "bootstrap_reduction_percent": 99.7236003838218
+}

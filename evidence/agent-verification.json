@@ -1,0 +1,10 @@
+{
+  "agent_routes": 143,
+  "records_checked": 3015,
+  "complete_source_text": true,
+  "exact_byte_ranges": true,
+  "address_formats_and_mirrors": true,
+  "dma_direction": true,
+  "diagram_labels": true,
+  "arbitrary_working_directory": true
+}

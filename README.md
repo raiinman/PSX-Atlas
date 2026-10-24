@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://raiinman.github.io/PSX-Atlas/">
+  <a href="https://raiinman.github.io/PSX-Atlas/#control-center">
     <img src="docs/promo/psx-atlas-hero.png" width="100%" alt="PSX Atlas — the PlayStation hardware reference. Crimson armor, pearl trim and decorative motherboard artwork. Click to launch the Atlas.">
   </a>
 </p>
@@ -7,7 +7,7 @@
 <h1 align="center">PSX Atlas</h1>
 <p align="center"><strong>Your interactive PlayStation research control center. Fully offline.</strong></p>
 <p align="center">
-  <a href="https://raiinman.github.io/PSX-Atlas/"><strong>▶ LAUNCH PSX ATLAS</strong></a> &nbsp; · &nbsp;
+  <a href="https://raiinman.github.io/PSX-Atlas/#control-center"><strong>▶ LAUNCH PSX ATLAS</strong></a> &nbsp; · &nbsp;
   <a href="https://github.com/raiinman/PSX-Atlas/releases/latest"><strong>↓ DOWNLOAD OFFLINE</strong></a> &nbsp; · &nbsp;
   <a href="https://github.com/raiinman/PSX-Atlas/tree/main"><strong>⌘ VIEW SOURCE ON GITHUB</strong></a>
 </p>
@@ -19,9 +19,13 @@ The Atlas homepage is an **interactive project dashboard**: search the reference
 
 This is the repository's **README landing page**. The interactive app runs on **GitHub Pages**; click the banner or Launch button to use it. In the app, **Exit Atlas → GitHub** returns to the ordinary repository. GitHub's file browser stays available above this README.
 
-[![Actual PSX Atlas interface showing its original green hardware map, source-linked connections, topic library and red/pearl styling](docs/promo/atlas-interface.png)](https://raiinman.github.io/PSX-Atlas/)
+[![Actual PSX Atlas control center with Research, Updates, Reviews, Downloads and GitHub tabs above the preserved hardware map](docs/promo/atlas-interface.png)](https://raiinman.github.io/PSX-Atlas/#control-center)
 
-*Actual working Atlas interface. The armor artwork in the promotional banners is decorative; the source-linked map above is the real navigation model.*
+*Actual working control center. Research searches the local corpus; the original hardware map remains below it. The armor artwork in the promotional banners is decorative.*
+
+[![Actual Reviews panel showing the SPU ↔ Sound RAM evidence flag still awaiting review, with source and hash links](docs/promo/atlas-control-center-reviews.png)](https://raiinman.github.io/PSX-Atlas/#control-center)
+
+*The Reviews panel exposes the pending evidence without approving it or changing any connection.*
 
 | For people | For AI agents | For offline use |
 | --- | --- | --- |

@@ -19,3 +19,5 @@ No child documents.
 Navigation exposes an explicit Exit Atlas → GitHub link and offline-release download. These links navigate only on user activation; they add no remote runtime dependencies.
 
 The homepage project control center adds offline search and keyboard-accessible Research / Updates / Reviews / Downloads / GitHub panels around the unchanged hardware map. Snapshot status is explicitly not a live network check. Review panels expose evidence and citations, with no approval action.
+
+The control-center anchor reserves space for the fixed desktop/mobile header so direct Launch links reveal its heading and tabs. This scroll offset must not change map geometry or connection data.

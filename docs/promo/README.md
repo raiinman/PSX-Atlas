@@ -14,3 +14,6 @@ The two artwork images were generated using the built-in image_gen tool, not a C
 For future requests: **Create a branded GitHub repository README landing page with a hero banner, promotional graphics, an actual product screenshot, and prominent Launch / Download / View Source links. Host the interactive app on GitHub Pages.**
 
 A **repository social preview** is a separate image used when someone shares the repository URL. These README banners do not automatically set that GitHub setting.
+
+## Configured GitHub social preview
+On 2026-10-24, psx-atlas-social.jpg was uploaded and saved through the repository General → Social preview settings. It is a 1774×887, 308,408-byte JPEG of the 2:1 banner adaptation. GitHub cropped the original 3:1 hero, so the adaptation adds vertical room and keeps all lettering visible. The original README hero is unchanged. The PNG master is psx-atlas-social-2x1.png; its final built-in image_gen edit prompt is in prompts.json.

@@ -10,5 +10,14 @@
     "tool": "image_gen",
     "transparent_background": false,
     "prompt": "Use case: ads-marketing. Asset type: second promotional feature image for a GitHub README, landscape 2:1. Create a polished PSX ATLAS project showcase card. Match crimson Zero-inspired red mechanical armor, dark 1990s PlayStation circuitry, a thin iridescent candy pearl clearcoat stripe, warm ivory typography and restrained green signal glow. Keep all text large and readable. Main exact headline: 'ONE ARCHIVE. TWO WAYS IN.' Second exact line: 'HUMANS + AI AGENTS'. Footer exact line: 'SOURCE-LINKED · FULL-TEXT SEARCH · 100% OFFLINE'. Small project name 'PSX ATLAS' at upper left. Composition: a beautifully machined crimson circuit enclosure opens into two complementary bays, one suggesting an open reference book in warm ivory with abstract unreadable ruled pages, the other suggesting a compact machine-readable index as orderly glowing green data tiles. Finely detailed physical motherboard components, branching circuit traces visible behind both bays; no arrows, no defined causal route and no technical hardware diagram. The artwork should feel like a premium 1990s technical reference cover with modern precision, consistent red armor and graphite branding. No browser mockup, no fake app UI, no mascot, no official Sony branding, no watermark. Maintain clear hierarchy, readable text, ample margins. Exact requested text only. Decorative metaphor must not imply real technical connections."
+  },
+  {
+    "file": "psx-atlas-social-2x1.png",
+    "tool": "image_gen",
+    "referenced_image": "psx-atlas-hero.png",
+    "transparent_background": false,
+    "prompt": "Use case: precise-object-edit. Adapt the supplied PSX Atlas hero banner to a GitHub social preview with an exact 2:1 landscape aspect ratio. Preserve the entire existing original banner and all lettering fully visible, with no cropping at left or right. The current art is 3:1; extend the canvas vertically above and below it with seamlessly matching dark burgundy/graphite circuit-board atmosphere. Keep 'PSX ATLAS', 'THE PLAYSTATION HARDWARE REFERENCE', and 'READ. SEARCH. EXPLORE. OFFLINE.' exactly spelled and fully inside generous safe margins. Keep the red armor, pearl stripe, typography, hardware artwork and composition unchanged within the original banner area. Only add vertical breathing room to accommodate 2:1 social cards. Do not zoom into, crop or truncate the supplied image. No additional words, no watermark, no fake UI.",
+    "upload_copy": "psx-atlas-social.jpg",
+    "encoding": "JPEG quality 90, no resizing or cropping; 1774x887, under 1 MB"
   }
 ]

@@ -20,3 +20,6 @@ Run the actual workflow and inspect its conclusion/assets after setup.
 
 ## Deployed workflow
 `workflows/update.yml`: daily 14:23 UTC, push to main, or manual dispatch. Read-only build → verified artifact → separate draft/publish job; failure creates a repository maintenance issue. Action commit pins are recorded in actions-lock.json.
+
+## Hosted Atlas
+After successful release publication, the Pages job extracts the same verified ZIP, validates file hashes, and deploys it through the github-pages environment. Site failure leaves the previous Pages deployment available. No Jekyll theme is applied. The repository About link and README launch the working Atlas.

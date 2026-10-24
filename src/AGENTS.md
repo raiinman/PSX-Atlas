@@ -15,3 +15,5 @@ Keep the initial page payload small; load the full search index only on request.
 Browser offline/responsive/accessibility checks and agent retrieval checks.
 ## Child DOX index
 No child documents.
+
+Navigation exposes an explicit Exit Atlas → GitHub link and offline-release download. These links navigate only on user activation; they add no remote runtime dependencies.

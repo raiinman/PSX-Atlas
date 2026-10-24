@@ -24,3 +24,5 @@ No child documents.
 `pwsh -File scripts/register-update-task.ps1` registers the current-user, hidden Windows installer at 15:07 UTC. It uses interactive-token/least-privilege execution and catches up when available; the user must be signed in.
 
 Source-change hashes use committed Git blob bytes, not checkout bytes, so Windows/Linux line-ending differences cannot create false evidence reviews. Article/source byte-preservation checks still compare the exact acquired checkout.
+
+`node scripts/prepare-pages.mjs` verifies _release/PSX-Atlas-Offline.zip and extracts _site/ for GitHub Pages, adding hosted canonical URLs, robots.txt and sitemap.xml. It never rewrites upstream article text.

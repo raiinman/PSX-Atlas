@@ -1,5 +1,9 @@
 # PSX Atlas
 
+**[Launch the working PSX Atlas](https://raiinman.github.io/PSX-Atlas/)** · [Download the offline edition](https://github.com/raiinman/PSX-Atlas/releases/latest) · [Read the GitHub files](https://github.com/raiinman/PSX-Atlas/tree/main)
+
+The live site uses the same verified archive and updates with each successful daily release. Choose **Exit Atlas → GitHub** in its navigation to leave the site interface and read the repository. GitHub Pages uses the Atlas interface directly, without a Jekyll template.
+
 Open [offline/index.html](offline/index.html) in a modern browser. **No server, installation, internet, or account is needed.** Keep the whole `offline` folder together. The ZIP is a portable copy of that folder.
 
 This local reference preserves the entire published PSX-SPX development website at `https://psx-spx.consoledev.net/dev/`, captured October 24, 2026. Human and Agent views share one source corpus. The red armor and pearl interface retains the original system diagram, adds full-text section search, subsystem filters, a source-linked hardware atlas, four guided reading paths, page backlinks, diagram enlargement, interactive numeric bit-field extraction, and print styling. Search and all reading features work directly with `file://` URLs. No telemetry, remote font, CDN, cloud API, or service worker is used. Added credits and source notices are consolidated in the sidebar snapshot block; original source credits stay in the articles.

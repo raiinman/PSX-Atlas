@@ -68,7 +68,7 @@ Each update pins one upstream commit, fetches all branch/tag identities, renders
 
 Changed/added/removed source files, pages, headings and links are recorded in data/update-review.json. Manual hardware connections whose source document changed receive review badges and an open review issue. Original claims, uncertainty and alternatives are retained. Review flags persist until a person records the reviewed source hash under the exact edge ID in state/accepted-evidence.json; closing an issue alone does not accept evidence. No fixed DMA2 trace or semantic rewrite is generated.
 
-This computer's daily installer checks the verified release at **15:07 UTC (09:07 MDT / 08:07 MST)**. It verifies the ZIP and every archived file before switching folders and retains the previous offline folder under _backups/. It does not need an AI model. Reading/searching remains fully offline; only maintenance uses the network. A sleeping/offline computer catches up when the scheduled task can run.
+This computer's daily installer checks the verified release at **15:07 UTC (09:07 MDT / 08:07 MST)**. It verifies the ZIP and every archived file before switching folders and retains the previous offline folder under _backups/. It does not need an AI model. Reading/searching remains fully offline; only maintenance uses the network. A sleeping/offline computer catches up when the scheduled task can run; this least-privilege task runs while you are signed in. Register it again after moving the checkout using `pwsh -File scripts/register-update-task.ps1`.
 
 Manual installation of the latest release:
 

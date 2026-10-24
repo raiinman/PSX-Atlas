@@ -17,3 +17,5 @@ Browser offline/responsive/accessibility checks and agent retrieval checks.
 No child documents.
 
 Navigation exposes an explicit Exit Atlas → GitHub link and offline-release download. These links navigate only on user activation; they add no remote runtime dependencies.
+
+The homepage project control center adds offline search and keyboard-accessible Research / Updates / Reviews / Downloads / GitHub panels around the unchanged hardware map. Snapshot status is explicitly not a live network check. Review panels expose evidence and citations, with no approval action.

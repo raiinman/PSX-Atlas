@@ -30,7 +30,18 @@ try{
  const context=await browser.newContext({viewport:{width:1440,height:1000},offline:true,reducedMotion:'reduce'}),page=await context.newPage(),remote=[];
  page.on('pageerror',e=>report.errors.push(e.message));page.on('request',r=>{if(/^https?:/.test(r.url()))remote.push(r.url());});
  const goto=async p=>{await page.goto(pathToFileURL(path.join(dir,p)).href);assert.deepEqual(report.errors,[],'No JavaScript errors after navigating to '+p);};
- await goto('index.html');assert.equal(await page.locator('#hardware-map .map-node').count(),14);
+ await goto('index.html');
+ assert.equal(await page.getByRole('tablist',{name:'Project controls'}).getByRole('tab').count(),5);
+ await page.locator('#control-query').fill('texture cache');await page.getByRole('button',{name:'Search reference',exact:true}).click();await page.waitForFunction(()=>document.querySelectorAll('#results .result').length>0);assert.equal(await page.locator('#query').inputValue(),'texture cache');await page.keyboard.press('Escape');
+ await page.getByRole('tab',{name:/^Reviews/}).click();assert.ok(await page.locator('#control-panel-reviews').isVisible());const review=JSON.parse(fs.readFileSync(dir+'/data/update-review.json'));assert.equal(await page.locator('.pending-evidence').count(),review.manual_evidence.length);assert.equal(await page.locator('#control-panel-reviews button').count(),0,'Dashboard cannot approve evidence');
+ await page.getByRole('tab',{name:'Updates',exact:true}).click();assert.match(await page.locator('#control-panel-updates').innerText(),/not a live network check/);await page.keyboard.press('ArrowLeft');assert.equal(await page.getByRole('tab',{name:'Research',exact:true}).getAttribute('aria-selected'),'true');
+ await page.getByRole('tab',{name:'Downloads',exact:true}).click();assert.equal(await page.getByRole('link',{name:'Download verified ZIP (internet)',exact:true}).getAttribute('href'),'https://github.com/raiinman/PSX-Atlas/releases/latest/download/PSX-Atlas-Offline.zip');
+ await page.getByRole('tab',{name:'GitHub',exact:true}).click();assert.equal(await page.getByRole('link',{name:'Read the GitHub repository',exact:true}).getAttribute('href'),'https://github.com/raiinman/PSX-Atlas');
+ for(const key of ['reviews','updates','downloads']){await page.locator('#control-tab-'+key).click();await page.setViewportSize({width:320,height:900});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=document.documentElement.clientWidth+1),'Control panel fits mobile: '+key);}
+ await page.setViewportSize({width:1440,height:1000});await page.getByRole('tab',{name:'Research',exact:true}).click();
+ const generatedHardware=JSON.parse(fs.readFileSync(dir+'/data/graph.json')).hardware,originalHardware=JSON.parse(fs.readFileSync('src/hardware.json'));assert.deepEqual(generatedHardware.nodes,originalHardware.nodes);assert.deepEqual(generatedHardware.edges.map(({review_status,evidence_hash,...edge})=>edge),originalHardware.edges);assert.deepEqual(generatedHardware.journeys,originalHardware.journeys);
+ report.browser.control_center='Offline search, five panels, keyboard tabs, mobile layouts, source review and download/repository links passed; hardware model unchanged';
+ assert.equal(await page.locator('#hardware-map .map-node').count(),14);
  await page.locator('[data-component=gpu]').click();assert.equal(await page.locator('#inspector h3').innerText(),'GPU');
  await page.locator('[data-journey=disc]').click();assert.ok((await page.locator('#journey').innerText()).includes('DMA3'));
  await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:'evidence/atlas-desktop.png',fullPage:false});

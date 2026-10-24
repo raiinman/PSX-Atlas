@@ -26,3 +26,5 @@ No child documents.
 Source-change hashes use committed Git blob bytes, not checkout bytes, so Windows/Linux line-ending differences cannot create false evidence reviews. Article/source byte-preservation checks still compare the exact acquired checkout.
 
 `node scripts/prepare-pages.mjs` verifies _release/PSX-Atlas-Offline.zip and extracts _site/ for GitHub Pages, adding hosted canonical URLs, robots.txt and sitemap.xml. It never rewrites upstream article text.
+
+control-center.mjs renders the project deck from the current manifest and updater review report. annotate-review.mjs refreshes its pending evidence after snapshot comparison. Verification checks keyboard tabs, search handoff, mobile panels, review persistence and exact hardware model preservation.

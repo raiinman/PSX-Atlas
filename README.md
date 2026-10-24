@@ -5,7 +5,7 @@
 </p>
 
 <h1 align="center">PSX Atlas</h1>
-<p align="center"><strong>Read the reference. Explore its connections. Keep the whole thing offline.</strong></p>
+<p align="center"><strong>Your interactive PlayStation research control center. Fully offline.</strong></p>
 <p align="center">
   <a href="https://raiinman.github.io/PSX-Atlas/"><strong>▶ LAUNCH PSX ATLAS</strong></a> &nbsp; · &nbsp;
   <a href="https://github.com/raiinman/PSX-Atlas/releases/latest"><strong>↓ DOWNLOAD OFFLINE</strong></a> &nbsp; · &nbsp;
@@ -14,6 +14,8 @@
 <p align="center"><a href="https://raiinman.github.io/PSX-Atlas/agents.html">Agent access</a> · <a href="https://raiinman.github.io/PSX-Atlas/agent/START.md">Agent starting point</a> · <a href="https://github.com/raiinman/PSX-Atlas/actions/workflows/update.yml">Daily update checks</a> · <a href="https://github.com/raiinman/PSX-Atlas/issues/1">Evidence awaiting review</a></p>
 
 The complete PSX-SPX development reference, presented as a source-linked hardware Atlas for people and AI agents. Full-text search, original articles and diagrams, exact-section retrieval, backlinks and open data formats share one archive. The red armor and pearl interface preserves the original green system map.
+
+The Atlas homepage is an **interactive project dashboard**: search the reference, explore the original hardware map, inspect source updates and pending evidence, download verified archives and open the GitHub project. Status belongs to the packaged snapshot; no background network connection is required.
 
 This is the repository's **README landing page**. The interactive app runs on **GitHub Pages**; click the banner or Launch button to use it. In the app, **Exit Atlas → GitHub** returns to the ordinary repository. GitHub's file browser stays available above this README.
 

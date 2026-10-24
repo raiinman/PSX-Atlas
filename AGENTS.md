@@ -38,3 +38,5 @@ Daily CI is in .github/workflows/update.yml. README documents release installati
 The same verified archive is published at https://raiinman.github.io/PSX-Atlas/. README and repository About link launch it; Atlas navigation links back to the normal GitHub repository.
 
 - [docs/AGENTS.md](docs/AGENTS.md): GitHub README showcase and promotional assets; decorative artwork must never be treated as hardware evidence.
+
+The homepage is an Atlas project control center. Its controls use packaged snapshot/review data and make no background network requests. Hardware geometry, branches, journeys and explicit acceptance remain separate contracts.
